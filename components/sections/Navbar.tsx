@@ -10,6 +10,7 @@ export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
 
   useEffect(() => {
@@ -37,6 +38,10 @@ export const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // initial call
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setIsMounted(true);
   }, []);
 
   // Prevent scroll when mobile menu is open
@@ -159,12 +164,14 @@ export const Navbar = () => {
           </button>
         </div>
       </header>
-      <PopupModal
-        url="https://calendly.com/neha-wilysion/new-meeting"
-        onModalClose={() => setIsOpen(false)}
-        open={isOpen}
-        rootElement={document.body}
-      />
+      {isMounted && (
+        <PopupModal
+          url="https://calendly.com/neha-wilysion/new-meeting"
+          onModalClose={() => setIsOpen(false)}
+          open={isOpen}
+          rootElement={document.body}
+        />
+      )}
       {/* Mobile Drawer Overlay */}
       <div
         className={`fixed inset-0 bg-dark-green z-9999 backdrop-blur-xl transition-all duration-300 lg:hidden flex flex-col justify-center items-center ${isMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-10 pointer-events-none'
