@@ -1,0 +1,156 @@
+import type { Metadata, Viewport } from "next";
+import "flatpickr/dist/flatpickr.css";
+import "./globals.css";
+import { Manrope, Poppins } from "next/font/google";
+import { LenisProvider } from "@/components/LenisProvider";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
+});
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
+export const metadata: Metadata = {
+  title: "Aurna Wellness | Rediscover Deep Sleep & Inner Peace",
+  description:
+    "Holistic therapies, sound healing sessions, reiki energy healing, and personalized deep sleep programs to restore your natural sleep rhythm and calm your nervous system.",
+  keywords: [
+    "wellness center",
+    "sound healing",
+    "deep sleep therapy",
+    "reiki healing",
+    "meditation classes",
+    "holistic therapy",
+    "mindfulness",
+    "sleep programs",
+    "sound bath",
+    "stress relief",
+    "inner peace",
+  ],
+  authors: [{ name: "Aurna Wellness", url: "https://aurnawellness.com" }],
+  creator: "Aurna Wellness",
+  publisher: "Aurna Wellness",
+  metadataBase: new URL("https://aurnawellness.com"),
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Aurna Wellness | Rediscover Deep Sleep & Inner Peace",
+    description:
+      "Holistic therapies, sound healing sessions, and personalized deep sleep programs to restore your natural sleep rhythm.",
+    url: "https://aurnawellness.com",
+    siteName: "Aurna Wellness",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/hero.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Aurna Wellness Center - Sanctuary for Sound Healing & Deep Sleep",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aurna Wellness | Rediscover Deep Sleep & Inner Peace",
+    description:
+      "Holistic therapies, sound healing sessions, and personalized deep sleep programs to restore your natural sleep rhythm.",
+    images: ["/images/hero.jpg"],
+    creator: "@aurnawellness",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  // JSON-LD structured data for local wellness business
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WellnessCenter",
+    "name": "Aurna Wellness Center",
+    "image": "https://aurnawellness.com/images/hero.jpg",
+    "@id": "https://aurnawellness.com/#wellnesscenter",
+    "url": "https://aurnawellness.com",
+    "telephone": "+1-800-123-AUMA",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Wellness Ave, Suite 100",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10001",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.7128,
+      "longitude": -74.0060
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Friday"],
+        "opens": "19:00",
+        "closes": "21:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/aurnawellness",
+      "https://www.facebook.com/aurnawellness",
+      "https://twitter.com/aurnawellness"
+    ]
+  };
+
+  return (
+    <html
+      lang="en"
+      className={`${manrope.variable} ${poppins.variable}`}
+      suppressHydrationWarning
+    >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body className="min-h-screen bg-background text-foreground antialiased overflow-x-hidden">
+        <LenisProvider>
+          {/* <main className="flex min-h-screen flex-col"> */}
+            {children}
+          {/* </main> */}
+        </LenisProvider>
+      </body>
+    </html>
+  );
+}

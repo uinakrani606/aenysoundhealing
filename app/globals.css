@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+@theme {
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-tablet: 991px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --color-primary: #2E2E2E;
+  --color-secondary: #FCFCFA;
+  --font-sans: var(--font-manrope);
+  --font-heading: var(--font-poppins);
+  --color-text: #535353;
+  --color-accent: #FFFFFF;
+  --color-orange: #F38C63;
+  --color-green: #1A7567;
+  --color-border: #DADBDB;
+  --color-black: #000000;
+  --color-transparent: #FCFCFA00;
+  --color-white: #FFFFFF;
+  --color-dark-green: #053D35;
+  --color-glass: #FFFFFF0F;
+  --color-muted: #c9c1c1;
+  --color-light: #F0F0F0;
+  --color-overlay: #053D35B5;
+
+  --font-heading-xl: 100px;
+  --font-heading-lg: 60px;
+  --font-heading-md: 32px;
+  --font-heading-sm: 24px;
+  --font-heading-xs: 20px;
+  --font-body: 18px;
+  --font-small: 14px;
+
+  --line-xl: 1.2em;
+  --line-lg: 1.2em;
+  --line-md: 1.3em;
+  --line-sm: 1.4em;
+  --line-body: 1.5em;
+  --line-small: 1.6em;
+
+  --radius-lg: 32px;
+  --radius-md: 24px;
+  --radius-sm: 18px;
+
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.05);
+  --shadow-card: 0 20px 60px rgba(0,0,0,0.08);
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  color: var(--color-text);
+  background: var(--color-secondary);
+}
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+}
+a {
+  outline: none;
+}
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-dark {
+  background: rgba(5, 61, 53, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.gradient-bg:before {
+  background-image: linear-gradient(rgba(252, 252, 250, 0) 0%, rgb(5, 61, 53) 100%);
+}
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-track {
+    width: max-content;
+    animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 75px));
+    }
+}
+
+/* Lenis smooth scrolling rules */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+.flatpickr-day.selected {
+  background: #1a7567 !important;
+  border-color: #1a7567 !important; 
+}
