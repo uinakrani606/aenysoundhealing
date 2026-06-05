@@ -7,7 +7,7 @@ export const Communities = () => {
             <div className="max-w-335 w-full mx-auto lg:pt-30 tablet:pt-22 md:pt-15 pt-10">
                 <div className="bg-[url(/images/communities.jpg)] rounded-[30px] bg-fixed lg:py-20 tablet:py-15 md:py-10 py-8 bg-center bg-no-repeat bg-cover relative before:content-[''] before:bg-[linear-gradient(270deg,rgba(252,252,250,0)_0%,rgb(243,140,99)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[20px] before:opacity-100">
                     <ScrollAnimate animation="fade-up" duration={0.8} className="relative z-99 flex flex-col items-center sm:px-0 px-4">
-                        <h5 className="text-white xl:text-[60px] md:text-[42px] sm:text-[28px] text-xl font-semibold mb-6 text-center leading-[1.2] max-w-200">
+                        <h5 className="text-white xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal mb-6 text-center max-w-200">
                             Reconnect With Your Inner Calm Today
                         </h5>
                         <p className="text-white text-lg dm-sans text-center mb-7 max-w-150">

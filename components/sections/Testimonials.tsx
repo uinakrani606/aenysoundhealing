@@ -9,7 +9,7 @@ export const Testimonials = () => {
     <section id="testimonials" className="px-5 bg-secondary">
       <div className='lg:pt-30 tablet:pt-22 md:pt-15 pt-10 max-w-335 mx-auto'>
         <div className='flex tablet:gap-0 gap-5 flex-wrap '>
-          <div className='tablet:max-w-[40%] w-full tablet:bg-green'>
+          <div className='tablet:max-w-[42%] w-full tablet:bg-green'>
             <div className='flex flex-col gap-5 justify-between bg-secondary rounded-br-[50px] pr-10 md:pb-10 pb-5 h-full'>
               <div className="flex items-center gap-5">
                 <Image
@@ -20,7 +20,7 @@ export const Testimonials = () => {
                 />
                 <span className="text-[#2e2e2e] font-semibold sm:text-lg text-base">Testimonials</span>
               </div>
-              <h2 className='text-primary xl:text-[60px] md:text-[42px] sm:text-[28px] text-[24px] font-semibold leading-[1.2]'>
+              <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal'>
                 What Our Clients Are Saying
               </h2>
               <p className='dm-sans sm:text-lg text-sm text-text leading-normal'>
@@ -28,7 +28,7 @@ export const Testimonials = () => {
               </p>
             </div>
           </div>
-          <div className='tablet:max-w-[60%] w-full bg-[radial-gradient(at_0%_100%,rgb(26,117,103)_28%,rgb(5,61,53)_100%)] md:p-10 p-6 rounded-[20px] tablet:rounded-bl-none'>
+          <div className='tablet:max-w-[58%] w-full bg-[radial-gradient(at_0%_100%,rgb(26,117,103)_28%,rgb(5,61,53)_100%)] md:p-10 p-6 rounded-[20px] tablet:rounded-bl-none'>
             <div className='flex  flex-col h-full  justify-between'>
               <p className=' md:text-[27px]  sm:text-2xl text-lg font-normal text-white mb-12.5'>“I walked in carrying the weight of the world. After one sound healing session, I felt completely weightless. Profoundly transformative.”</p>
               <div className='flex items-center justify-between'>
@@ -48,7 +48,7 @@ export const Testimonials = () => {
               </div>
             </div>
           </div>
-          <div className='tablet:max-w-[40%] relative bg-[url(/images/journeys.jpg)] w-full bg-center bg-no-repeat bg-cover rounded-[20px] tablet:rounded-tr-none xl:p-10 p-6 before:content-[""] before:bg-[radial-gradient(at_100%_0%,rgb(26,117,103)_10%,rgba(252,252,250,0)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:opacity-100 before:rounded-[20px] tablet:before:rounded-tr-none before:z-1'>
+          <div className='tablet:max-w-[42%] relative bg-[url(/images/journeys.jpg)] w-full bg-center bg-no-repeat bg-cover rounded-[20px] tablet:rounded-tr-none xl:p-10 p-6 before:content-[""] before:bg-[radial-gradient(at_100%_0%,rgb(26,117,103)_10%,rgba(252,252,250,0)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:opacity-100 before:rounded-[20px] tablet:before:rounded-tr-none before:z-1'>
             <video
           autoPlay
           loop
@@ -100,7 +100,7 @@ export const Testimonials = () => {
             </div>
 
           </div>
-          <div className='tablet:max-w-[60%] w-full tablet:bg-green'>
+          <div className='tablet:max-w-[58%] w-full tablet:bg-green'>
             <div className='bg-secondary pt-10 tablet:pl-10 rounded-tl-[50px] h-full '>
               <div>
                 <div className='flex items-center justify-between gap-5 border-b border-border pb-6.25 xs:flex-nowrap flex-wrap'>

@@ -75,7 +75,7 @@ const playVideo = () => {
                   <span className="text-[#2e2e2e] font-semibold text-lg">our services</span>
                 </div>
               </div>
-              <h2 className="xl:text-[60px] md:text-[42px] sm:text-[28px] text-[24px] font-semibold text-primary leading-[1.2] mt-4">
+              <h2 className="xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal text-primary mt-4">
                 Healing Therapies for Mind, Body & Soul
               </h2>
             </ScrollAnimate>

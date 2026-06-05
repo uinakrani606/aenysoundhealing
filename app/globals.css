@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import "tailwindcss";
+@font-face {
+  font-family: "Tan Pearl";
+  src: url("../public/fonts/tan-Pearl-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 @theme {
   --breakpoint-xs: 480px;
   --breakpoint-sm: 640px;
@@ -58,6 +65,9 @@ body {
 }
 .dm-sans {
   font-family: "DM Sans", sans-serif;
+}
+.tan-pearl {
+  font-family: "Tan Pearl", sans-serif;
 }
 a {
   outline: none;

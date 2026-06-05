@@ -32,7 +32,7 @@ export const About = () => {
               />
               <span className="text-[#2e2e2e] font-semibold sm:text-lg text-base">The Heart of Aeny</span>
             </div>
-            <h2 className="text-[#2e2e2e] xl:text-[60px] md:text-[42px] sm:text-[28px] text-xl font-semibold leading-[1.2] mt-4">
+            <h2 className="text-[#2e2e2e] xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal mt-4">
               A Space to Pause, Heal & Reconnect
             </h2>
           </ScrollAnimate>

@@ -118,7 +118,7 @@ export const Pricing = () => {
                   />
                   <span className="text-white font-semibold sm:text-lg text-base">Pricing Packages</span>
                 </div>
-                <h2 className='text-white xl:text-[60px] md:text-[42px] sm:text-[28px] text-xl font-semibold leading-[1.2] mb-5'>
+                <h2 className='text-white xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal mb-5'>
                   Choose the Right Path for You
                 </h2>
                 <p className='dm-sans text-lg text-border leading-[1.6] mb-5'>

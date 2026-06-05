@@ -35,9 +35,8 @@ export const BeginHealing = () => {
               />
               <span className="text-[#2e2e2e] font-semibold sm:text-lg text-base">The Mind & Heart</span>
             </div>
-            <h2 className='text-primary xl:text-[60px] md:text-[42px] sm:text-[28px] text-xl font-semibold leading-[1.2] max-w-172.5 w-full'>
-              If your mind feels tired
-              but life keeps going…
+            <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal max-w-[730px] w-full'>
+              If your mind feels tired but life keeps going…
             </h2>
           </div>
           <div className='flex flex-col gap-3'>

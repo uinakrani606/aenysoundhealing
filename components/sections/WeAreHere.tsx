@@ -28,7 +28,7 @@ export const WeAreHere = () => {
                             <span className="text-[#2e2e2e] font-semibold sm:text-lg text-base">Worldwide Healing</span>
                         </div>
                         <div>
-                            <h2 className='text-primary xl:text-[60px] md:text-[42px] sm:text-[28px] text-xl font-semibold leading-[1.2] mb-5  text-center     '>
+                            <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal mb-5  text-center     '>
                                 Global Sound Healing Sessions
                             </h2>
                             <p className="dm-sans sm:text-lg text-sm text-text leading-[1.6] text-center mb-6">

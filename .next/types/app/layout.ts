@@ -1,4 +1,4 @@
-// File: E:\aruna\app\layout.tsx
+// File: C:\Users\admin\Desktop\New folder (3)\aruna\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
