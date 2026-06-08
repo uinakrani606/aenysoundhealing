@@ -10,8 +10,8 @@ export const HealingPrograms = () => {
   return (
     <section id="programs" className="sm:px-5 px-4 relative overflow-hidden">
       <div className="max-w-335 w-full mx-auto lg:py-30 tablet:py-22 md:py-15 py-10 flex items-center xl:gap-20 lg:gap-12 md:gap-8 gap-4  tablet:flex-row-reverse flex-col-reverse"> 
-        <div className='flex xs:gap-0 items-center flex-wrap w-full '>
-          <div className='xs:p-5 p-3 max-w-[50%] h-[-webkit-fill-available] w-full bg-[url(/images/journey.jpg)] bg-center bg-no-repeat bg-cover xs:rounded-[20px_20px_0_20px] rounded-[8px_8px_0_8px]  relative before:content-[""] before:bg-[radial-gradient(at_100%_100%,rgb(26,117,103)_10%,rgba(252,252,250,0)_100%)] before:absolute before:w-full before:h-full before:inset-0 xs:before:rounded-[20px_20px_0_20px] before:rounded-[8px_8px_0_8px]  before:opacity-100 2xl:p-7.5'>
+        <div className='grid grid-cols-2 xs:gap-0 items-center flex-wrap w-full '>
+          <div className='xs:p-5 p-3 h-full w-full bg-[url(/images/journey.jpg)] bg-center bg-no-repeat bg-cover xs:rounded-[20px_20px_0_20px] rounded-[8px_8px_0_8px] relative before:content-[""] before:bg-[radial-gradient(at_100%_100%,rgb(26,117,103)_10%,rgba(252,252,250,0)_100%)] before:absolute before:w-full before:h-full before:inset-0 xs:before:rounded-[20px_20px_0_20px] before:rounded-[8px_8px_0_8px]  before:opacity-100 2xl:p-7.5'>
             <div className='relative z-999 flex  flex-col w-full xs:gap-22.5 gap-12 h-full justify-between'>
               <p className='text-orange xs:text-xl text-sm text-right font-semibold  leading-[1.4] w-full '>01</p>
               <div>
@@ -20,7 +20,7 @@ export const HealingPrograms = () => {
               </div>
             </div>
           </div>
-          <div className='max-w-[50%] w-full bg-green  xs:rounded-none h-[-webkit-fill-available]'>
+          <div className='w-full bg-green xs:rounded-none h-full'>
             <div className='bg-secondary xs:rounded-[0_0_0_50px] rounded-[0_0_0_20px] 2xl:p-7.5 xs:p-5 p-3 h-full'>
               <div className='relative z-999 flex  flex-col w-full xs:gap-22.5 gap-12 h-full justify-between'>
                 <p className='text-green xs:text-xl text-sm text-right font-semibold  leading-[1.4] w-full '>02</p>
@@ -31,8 +31,8 @@ export const HealingPrograms = () => {
               </div>
             </div>
           </div>
-          <div className='max-w-[50%] w-full bg-green xs:rounded-none h-[-webkit-fill-available]'>
-            <div className='bg-secondary xs:rounded-[0_50px_0_0] rounded-[0_20px_0_0] 2xl:p-7.5 xs:p-5 p-3  h-full'>
+          <div className='w-full bg-green xs:rounded-none h-full'>
+            <div className='bg-secondary xs:rounded-[0_50px_0_0] rounded-[0_20px_0_0] 2xl:p-7.5 xs:p-5 p-3 h-full'>
               <div className='relative z-999 flex  flex-col w-full xs:gap-22.5 gap-12 h-full justify-between'>
                 <p className='text-green xs:text-xl text-sm text-right font-semibold  leading-[1.4] w-full '>03</p>
                 <div>
@@ -42,7 +42,7 @@ export const HealingPrograms = () => {
               </div>
             </div>
           </div>
-          <div className='h-[-webkit-fill-available] max-w-[50%] w-full bg-[radial-gradient(at_0%_0%,rgb(26,117,103)_0%,rgb(5,61,53)_100%)] 2xl:p-7.5 xs:p-5 p-3 xs:rounded-[0_20px_20px_20px] rounded-[0_8px_8px_8px]'>
+          <div className='w-full bg-[radial-gradient(at_0%_0%,rgb(26,117,103)_0%,rgb(5,61,53)_100%)] 2xl:p-7.5 xs:p-5 p-3 xs:rounded-[0_20px_20px_20px] rounded-[0_8px_8px_8px]'>
             <div className='relative z-999 flex  flex-col w-full xs:gap-22.5 gap-12 h-full justify-between'>
               <p className='text-orange xs:text-xl text-sm text-right font-semibold  leading-[1.4] w-full '>04</p>
               <div>
