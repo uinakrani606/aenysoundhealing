@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Image from 'next/image';
 import Star from '../../public/images/star-orange.png';
 import Studio from '../../public/images/studio-01.jpg';
 import { ScrollAnimate } from '../ScrollAnimate';
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 export const Pricing = () => {
   return (
