@@ -10,46 +10,44 @@ export const HealingPrograms = () => {
   return (
     <section id="programs" className="sm:px-5 px-4 relative overflow-hidden">
       <div className="max-w-335 w-full mx-auto lg:py-30 tablet:py-22 md:py-15 py-10 flex items-center xl:gap-20 lg:gap-12 md:gap-8 gap-4  tablet:flex-row-reverse flex-col-reverse"> 
-        <div className='flex xs:gap-0 gap-3 items-center flex-wrap w-full '>
-          <div className='p-5 xs:max-w-[50%] h-[stretch] w-full bg-[url(/images/journey.jpg)] bg-center bg-no-repeat bg-cover xs:rounded-[20px_20px_0_20px] rounded-[20px]  relative before:content-[""] before:bg-[radial-gradient(at_100%_100%,rgb(26,117,103)_10%,rgba(252,252,250,0)_100%)] before:absolute before:w-full before:h-full before:inset-0 xs:before:rounded-[20px_20px_0_20px] before:rounded-[20px] before:opacity-100 2xl:p-7.5'>
-            <div className='relative z-999 flex  flex-col w-full gap-22.5 h-full justify-between'>
-              <p className='text-orange text-xl text-right font-semibold  leading-[1.4] w-full '>01</p>
+        <div className='flex xs:gap-0 items-center flex-wrap w-full '>
+          <div className='xs:p-5 p-3 max-w-[50%] h-[stretch] w-full bg-[url(/images/journey.jpg)] bg-center bg-no-repeat bg-cover xs:rounded-[20px_20px_0_20px] rounded-[8px_8px_0_8px]  relative before:content-[""] before:bg-[radial-gradient(at_100%_100%,rgb(26,117,103)_10%,rgba(252,252,250,0)_100%)] before:absolute before:w-full before:h-full before:inset-0 xs:before:rounded-[20px_20px_0_20px] before:rounded-[8px_8px_0_8px]  before:opacity-100 2xl:p-7.5'>
+            <div className='relative z-999 flex  flex-col w-full xs:gap-22.5 gap-12 h-full justify-between'>
+              <p className='text-orange xs:text-xl text-sm text-right font-semibold  leading-[1.4] w-full '>01</p>
               <div>
-                <h4 className='text-white sm:text-2xl text-[20px] font-semibold leading-[1.3] mb-2'>Mentally Overwhelmed</h4>
-                <p className='text-white text-lg dm-sans font-normal'>Your mind feels constantly active and tired.</p>
+                <h4 className='text-white sm:text-2xl xs:text-[20px] text-[15px] font-semibold leading-[1.3] mb-2'>Mentally Overwhelmed</h4>
+                <p className='text-white sm:text-lg text-[12px] dm-sans font-normal'>Your mind feels constantly active and tired.</p>
               </div>
             </div>
           </div>
-          <div className='xs:max-w-[50%] w-full bg-green xs:border-0 border border-green rounded-[20px] xs:rounded-none h-[stretch]'>
-            <div className='bg-secondary xs:rounded-[0_0_0_50px] rounded-[20px] 2xl:p-7.5 p-5 h-full'>
-              <div className='relative z-999 flex  flex-col w-full gap-22.5 h-full justify-between'>
-                <p className='text-green text-xl text-right font-semibold  leading-[1.4] w-full '>02</p>
+          <div className='max-w-[50%] w-full bg-green  xs:rounded-none h-[stretch]'>
+            <div className='bg-secondary xs:rounded-[0_0_0_50px] rounded-[0_0_0_20px] 2xl:p-7.5 xs:p-5 p-3 h-full'>
+              <div className='relative z-999 flex  flex-col w-full xs:gap-22.5 gap-12 h-full justify-between'>
+                <p className='text-green xs:text-xl text-sm text-right font-semibold  leading-[1.4] w-full '>02</p>
                 <div>
-                  <h4 className='text-primary sm:text-2xl text-[20px] font-semibold leading-[1.3] mb-2'>Emotionally Heavy</h4>
-                  <p className='text-primary text-lg dm-sans font-normal'>You feel emotionally drained or disconnected.</p>
+                  <h4 className='text-primary sm:text-2xl xs:text-[20px] text-[15px] font-semibold leading-[1.3] mb-2'>Emotionally Heavy</h4>
+                  <p className='text-primary sm:text-lg text-[12px] dm-sans font-normal'>You feel emotionally drained or disconnected.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className='xs:max-w-[50%] w-full bg-green xs:border-0 border border-green rounded-[20px] xs:rounded-none h-[stretch]'>
-            <div className='bg-secondary xs:rounded-[0_50px_0_0] rounded-[20px] 2xl:p-7.5 p-5  h-full'>
-              <div className='relative z-999 flex  flex-col w-full gap-22.5 h-full justify-between'>
-                <p className='text-green text-xl text-right font-semibold  leading-[1.4] w-full '>03</p>
+          <div className='max-w-[50%] w-full bg-green xs:rounded-none h-[stretch]'>
+            <div className='bg-secondary xs:rounded-[0_50px_0_0] rounded-[0_20px_0_0] 2xl:p-7.5 xs:p-5 p-3  h-full'>
+              <div className='relative z-999 flex  flex-col w-full xs:gap-22.5 gap-12 h-full justify-between'>
+                <p className='text-green xs:text-xl text-sm text-right font-semibold  leading-[1.4] w-full '>03</p>
                 <div>
-                  <h4 className='text-primary sm:text-2xl text-[20px] font-semibold leading-[1.3] mb-2'>Unable to Relax</h4>
-                  <p className='text-primary text-lg dm-sans font-normal'>Even rest doesn’t feel restful anymore.</p>
+                  <h4 className='text-primary sm:text-2xl xs:text-[20px] text-[15px] font-semibold leading-[1.3] mb-2'>Unable to Relax</h4>
+                  <p className='text-primary sm:text-lg text-[12px] dm-sans font-normal'>Even rest doesn’t feel restful anymore.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className='xs:max-w-[50%] w-full bg-[radial-gradient(at_0%_0%,rgb(26,117,103)_0%,rgb(5,61,53)_100%)] 2xl:p-7.5 p-5 xs:rounded-[0_20px_20px_20px] rounded-[20px]'>
-            <div className='relative z-999 flex  flex-col w-full gap-22.5 h-full justify-between'>
-              <p className='text-orange text-xl text-right font-semibold  leading-[1.4] w-full '>04</p>
+          <div className='h-[stretch] max-w-[50%] w-full bg-[radial-gradient(at_0%_0%,rgb(26,117,103)_0%,rgb(5,61,53)_100%)] 2xl:p-7.5 xs:p-5 p-3 xs:rounded-[0_20px_20px_20px] rounded-[0_8px_8px_8px]'>
+            <div className='relative z-999 flex  flex-col w-full xs:gap-22.5 gap-12 h-full justify-between'>
+              <p className='text-orange xs:text-xl text-sm text-right font-semibold  leading-[1.4] w-full '>04</p>
               <div>
-                <h4 className='text-white sm:text-2xl text-[20px] font-semibold leading-[1.3] mb-2'>Seeking Peace</h4>
-                <p className='text-white text-lg dm-sans font-normal'>You want calmness and emotional balance.
-
-</p>
+                <h4 className='text-white sm:text-2xl xs:text-[20px] text-[15px] font-semibold leading-[1.3] mb-2'>Seeking Peace</h4>
+                <p className='text-white sm:text-lg text-[12px] dm-sans font-normal'>You want calmness and emotional balance.</p>
               </div>
             </div>
           </div>
