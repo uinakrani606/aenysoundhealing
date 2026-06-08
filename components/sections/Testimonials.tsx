@@ -74,7 +74,7 @@ export const Testimonials = () => {
                   </div>
                 </div>
                 <div className='sm:max-w-68.25 w-full flex flex-col justify-between'>
-                  <h5 className='text-white text-[24px] font-semibold leading-[1.3]'>We’re grateful for the kind words, love, and trust from our healing community</h5>
+                  <h5 className='text-white sm:text-[24px] text-lg font-semibold leading-[1.3]'>We’re grateful for the kind words, love, and trust from our healing community</h5>
                   <a href="#0" className='flex items-center text-orange text-base font-medium gap-2.5'>
                     See all Reviews
                     <svg className='w-4 h-4 fill-orange' aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg>

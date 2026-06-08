@@ -132,3 +132,14 @@ html.lenis, html.lenis body {
   background: #1a7567 !important;
   border-color: #1a7567 !important; 
 }
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper {
+  width: 100%;
+}
+.reels-swiper .swiper-wrapper{
+  margin: 20px;
+}

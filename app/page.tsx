@@ -12,6 +12,7 @@ import { BeginHealing } from '@/components/sections/BeginHealing';
 import { SoundHealing } from '@/components/sections/SoundHealing';
 import { HealingExperience } from '@/components/sections/HealingExperience';
 import { WeAreHere } from '@/components/sections/WeAreHere';
+import ReelsDisplay from '@/components/sections/ReelsDisplay';
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <Communities />
         <Testimonials />
         <HealingJourney />
+        <ReelsDisplay/>
         <Pricing />
         <WeAreHere />
       </main>

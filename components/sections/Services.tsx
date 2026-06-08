@@ -72,7 +72,7 @@ const playVideo = () => {
                     aria-hidden="true"
                     className="rounded-[20px] w-7.5 h-7.5 object-cover"
                   />
-                  <span className="text-[#2e2e2e] font-semibold text-lg">our services</span>
+                  <span className="text-[#2e2e2e] font-semibold text-lg">Our Services</span>
                 </div>
               </div>
               <h2 className="xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal text-primary mt-4">
@@ -80,7 +80,7 @@ const playVideo = () => {
               </h2>
             </ScrollAnimate>
             <ScrollAnimate animation="fade-up" duration={0.8} delay={0.15} className="lg:max-w-xl w-full">
-              <p className="text-lg dm-sans leading-normal text-text mb-5">
+              <p className="sm:text-lg text-[12px ] dm-sans leading-normal text-text mb-5">
                Explore a wide range of holistic healing services at Aeny Healing Studio designed to bring energy balance, emotional clarity, and deep inner peace. Whether you seek transformation, relaxation, or spiritual awakening, we have a therapy to support your journey.
               </p>
               <Link
@@ -120,7 +120,7 @@ const playVideo = () => {
                         <h3 className="text-[24px] font-semibold text-white leading-[1.3] mb-3">
                           {service.title}
                         </h3>
-                        <p className="text-lg text-border dm-sans leading-[1.4]">
+                        <p className="sm:text-lg text-sm text-border dm-sans leading-[1.4]">
                           {service.desc}
                         </p>
                       </div>

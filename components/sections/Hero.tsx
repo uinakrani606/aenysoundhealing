@@ -42,7 +42,7 @@ export const Hero = () => {
                 <h1 className="xl:text-[64px] max-w-[1037px] mb-5 md:text-5xl sm:text-[32px] text-2xl font-semibold text-white leading-[1.2]  tan-pearl font-medium">
                   A space to slow down and feel like yourself again
                 </h1>
-                <p className='text-white font-semibold text-lg mb-5 max-w-159.5'>
+                <p className='text-white font-semibold sm:text-lg text-[12px]  mb-5 max-w-159.5'>
                   Sound healing is a guided experience that helps your nervous system shift from stress into deep rest — through calming vibrations, sound bowls, and meditative sound journeys.
                 </p>
 
