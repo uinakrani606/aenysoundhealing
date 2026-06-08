@@ -83,7 +83,9 @@ export const Footer = () => {
                 <span>hello@aenywellness.com</span>
               </li>
               <li className="flex items-start gap-3 text-[16px] text-white/70">
+              <a href='https://maps.app.goo.gl/TxFgwjdhmY5x1mh87' target='_blank'>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </a>
                 <span>
                   Zadafiya Farm, Abrama Rd,
                   <br/>near P P Savani School,

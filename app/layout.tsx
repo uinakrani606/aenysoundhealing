@@ -16,11 +16,12 @@ const poppins = Poppins({
   variable: "--font-poppins",
   display: "swap",
 });
-
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 5,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: "cover",
 };
 
 export const metadata: Metadata = {
@@ -39,8 +40,9 @@ export const metadata: Metadata = {
     "sound bath",
     "stress relief",
     "inner peace",
+    "Aeny Wellness",
   ],
-  authors: [{ name: "Aeny Wellness"}],
+  authors: [{ name: "Aeny Wellness" }],
   creator: "Aeny Wellness",
   publisher: "Aeny Wellness",
   alternates: {
@@ -60,7 +62,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aeny Wellness | Rediscover Deep Sleep & Inner Peace",
     description:
-      "Holistic therapies, sound healing sessions, and personalized deep sleep programs to restore your natural sleep rhythm.",
+      "Holistic therapies, sound healing sessions, and personalized deep sleep programs.",
     siteName: "Aeny Wellness",
     locale: "en_US",
     type: "website",
@@ -69,7 +71,7 @@ export const metadata: Metadata = {
         url: "/images/hero.jpg",
         width: 1200,
         height: 630,
-        alt: "Aeny Wellness Center - Sanctuary for Sound Healing & Deep Sleep",
+        alt: "Aeny Wellness Center",
       },
     ],
   },
@@ -77,9 +79,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Aeny Wellness | Rediscover Deep Sleep & Inner Peace",
     description:
-      "Holistic therapies, sound healing sessions, and personalized deep sleep programs to restore your natural sleep rhythm.",
+      "Holistic therapies, sound healing sessions, and personalized deep sleep programs.",
     images: ["/images/hero.jpg"],
-    creator: "@aenywellness",
   },
   icons: {
     icon: "/favicon.ico",
@@ -90,35 +91,34 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
-  // JSON-LD structured data for local wellness business
+}) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WellnessCenter",
-    "name": "Aeny Wellness Center",
-    "telephone": "+1-800-123-AUMA",
-    "address": {
+    name: "Aeny Wellness Center",
+    telephone: "+1-800-123-AUMA",
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": "123 Wellness Ave, Suite 100",
-      "addressLocality": "New York",
-      "addressRegion": "NY",
-      "postalCode": "10001",
-      "addressCountry": "US"
+      streetAddress: "123 Wellness Ave, Suite 100",
+      addressLocality: "New York",
+      addressRegion: "NY",
+      postalCode: "10001",
+      addressCountry: "US",
     },
-    "geo": {
+    geo: {
       "@type": "GeoCoordinates",
-      "latitude": 40.7128,
-      "longitude": -74.0060
+      latitude: 40.7128,
+      longitude: -74.006,
     },
-    "openingHoursSpecification": [
+    openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Tuesday", "Friday"],
-        "opens": "19:00",
-        "closes": "21:00"
-      }
+        dayOfWeek: ["Tuesday", "Friday"],
+        opens: "19:00",
+        closes: "21:00",
+      },
     ],
   };
 
@@ -131,14 +131,16 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
         />
       </head>
-      <body className="min-h-screen bg-background text-foreground antialiased overflow-x-hidden">
+      <body className="min-h-[100dvh] bg-background text-foreground antialiased overflow-x-hidden">
         <LenisProvider>
-          {/* <main className="flex min-h-screen flex-col"> */}
+          <div className="flex min-h-[100dvh] flex-col">
             {children}
-          {/* </main> */}
+          </div>
         </LenisProvider>
       </body>
     </html>
