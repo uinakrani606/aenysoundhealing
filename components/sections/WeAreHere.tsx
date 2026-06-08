@@ -31,7 +31,7 @@ export const WeAreHere = () => {
                             <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal mb-5  text-center     '>
                                 Global Sound Healing Sessions
                             </h2>
-                            <p className="dm-sans sm:text-lg text-sm text-text leading-[1.6] text-center mb-6">
+                            <p className="dm-sans sm:text-lg text-[12px] text-text leading-[1.6] text-center mb-6">
                                 Join our online sound healing experiences from anywhere in the world.
                                 Connect, relax, and restore your inner balance through guided healing frequencies.
                             </p>

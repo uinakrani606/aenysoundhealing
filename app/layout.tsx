@@ -24,7 +24,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Aurna Wellness | Rediscover Deep Sleep & Inner Peace",
+  title: "Aeny Wellness | Rediscover Deep Sleep & Inner Peace",
   description:
     "Holistic therapies, sound healing sessions, reiki energy healing, and personalized deep sleep programs to restore your natural sleep rhythm and calm your nervous system.",
   keywords: [
@@ -40,10 +40,9 @@ export const metadata: Metadata = {
     "stress relief",
     "inner peace",
   ],
-  authors: [{ name: "Aurna Wellness", url: "https://aurnawellness.com" }],
-  creator: "Aurna Wellness",
-  publisher: "Aurna Wellness",
-  metadataBase: new URL("https://aurnawellness.com"),
+  authors: [{ name: "Aeny Wellness"}],
+  creator: "Aeny Wellness",
+  publisher: "Aeny Wellness",
   alternates: {
     canonical: "/",
   },
@@ -59,11 +58,10 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Aurna Wellness | Rediscover Deep Sleep & Inner Peace",
+    title: "Aeny Wellness | Rediscover Deep Sleep & Inner Peace",
     description:
       "Holistic therapies, sound healing sessions, and personalized deep sleep programs to restore your natural sleep rhythm.",
-    url: "https://aurnawellness.com",
-    siteName: "Aurna Wellness",
+    siteName: "Aeny Wellness",
     locale: "en_US",
     type: "website",
     images: [
@@ -71,17 +69,17 @@ export const metadata: Metadata = {
         url: "/images/hero.jpg",
         width: 1200,
         height: 630,
-        alt: "Aurna Wellness Center - Sanctuary for Sound Healing & Deep Sleep",
+        alt: "Aeny Wellness Center - Sanctuary for Sound Healing & Deep Sleep",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aurna Wellness | Rediscover Deep Sleep & Inner Peace",
+    title: "Aeny Wellness | Rediscover Deep Sleep & Inner Peace",
     description:
       "Holistic therapies, sound healing sessions, and personalized deep sleep programs to restore your natural sleep rhythm.",
     images: ["/images/hero.jpg"],
-    creator: "@aurnawellness",
+    creator: "@aenywellness",
   },
   icons: {
     icon: "/favicon.ico",
@@ -99,10 +97,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WellnessCenter",
-    "name": "Aurna Wellness Center",
-    "image": "https://aurnawellness.com/images/hero.jpg",
-    "@id": "https://aurnawellness.com/#wellnesscenter",
-    "url": "https://aurnawellness.com",
+    "name": "Aeny Wellness Center",
     "telephone": "+1-800-123-AUMA",
     "address": {
       "@type": "PostalAddress",
@@ -125,11 +120,6 @@ export default function RootLayout({
         "closes": "21:00"
       }
     ],
-    "sameAs": [
-      "https://www.instagram.com/aurnawellness",
-      "https://www.facebook.com/aurnawellness",
-      "https://twitter.com/aurnawellness"
-    ]
   };
 
   return (

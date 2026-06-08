@@ -19,7 +19,7 @@ export const Footer = () => {
               </svg>
               <span className="text-[28px] font-extrabold text-white tracking-tight">aeny</span>
             </Link>
-            <p className="text-[16px] text-white/70 leading-relaxed">
+            <p className="sm:text-[16px] text-[12px] text-white/70 leading-relaxed">
               Reconnect with Your Inner Calm. Subscribe to our newsletter for wellness tips and updates.
             </p>
             

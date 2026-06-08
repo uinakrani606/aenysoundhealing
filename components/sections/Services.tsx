@@ -72,7 +72,7 @@ const playVideo = () => {
                     aria-hidden="true"
                     className="rounded-[20px] w-7.5 h-7.5 object-cover"
                   />
-                  <span className="text-[#2e2e2e] font-semibold text-lg">our services</span>
+                  <span className="text-[#2e2e2e] font-semibold text-lg">Our Services</span>
                 </div>
               </div>
               <h2 className="xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal text-primary mt-4">
@@ -80,7 +80,7 @@ const playVideo = () => {
               </h2>
             </ScrollAnimate>
             <ScrollAnimate animation="fade-up" duration={0.8} delay={0.15} className="lg:max-w-xl w-full">
-              <p className="text-lg dm-sans leading-normal text-text mb-5">
+              <p className="sm:text-lg text-[12px ] dm-sans leading-normal text-text mb-5">
                Explore a wide range of holistic healing services at Aeny Healing Studio designed to bring energy balance, emotional clarity, and deep inner peace. Whether you seek transformation, relaxation, or spiritual awakening, we have a therapy to support your journey.
               </p>
               <Link
@@ -99,28 +99,28 @@ const playVideo = () => {
               duration={0.8}
               delay={1}
               stagger={0.15}
-              className="grid grid-cols-1 sm:grid-cols-2 tablet:grid-cols-4 gap-4"
+              className="grid grid-cols-2 tablet:grid-cols-4 sm:gap-4 gap-3"
             >
               {services.map((service) => (
                 <div
                   key={service.id}
-                  className="group relative service-items rounded-[15px] overflow-hidden aspect-3/4 shadow-soft transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:w-full before:h-full before:opacity-50  before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:z-99"
+                  className="group relative service-items rounded-[15px] overflow-hidden shadow-soft transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:w-full before:h-full before:opacity-50  before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:z-99"
                 >
                   <Image
                     src={service.image}
                     alt={`${service.title} - ${service.desc}`}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 absolute inset-0 rounded-[15px]"
                   />
-                  <span className="p-[5px_10px] absolute bg-secondary rounded-[10px] left-2.5 top-2.5 text-green text-sm font-semibold leading-[1.6]">
+                  <span className="sm:p-[5px_10px] p-[4px_6px] absolute bg-secondary sm:rounded-[10px] rounded-[6px] left-2.5 top-2.5 text-green sm:text-sm text-[10px] font-semibold leading-[1.6]">
                     {service.categories}
                   </span>
-                  <div className="absolute inset-0 transition-all duration-300 shadow-card lg:p-8 lg:pb-6 p-4 flex items-end z-999">
-                    <div className="flex justify-between items-start gap-4">
-                      <div>
-                        <h3 className="text-[24px] font-semibold text-white leading-[1.3] mb-3">
+                  <div className="relative transition-all duration-300 shadow-card lg:p-6 lg:pb-6 pb-4 px-3 sm:pt-50! pt-20! flex items-end z-999 h-full">
+                    <div className="flex justify-between items-start gap-4 h-auto">
+                      <div className="flex justify-end flex-col">
+                        <h3 className="sm:text-[24px] text-lg font-semibold text-white leading-[1.3] mb-3">
                           {service.title}
                         </h3>
-                        <p className="text-lg text-border dm-sans leading-[1.4]">
+                        <p className="sm:text-lg text-[12px] text-border dm-sans leading-[1.4] ">
                           {service.desc}
                         </p>
                       </div>

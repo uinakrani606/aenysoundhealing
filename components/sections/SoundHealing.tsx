@@ -38,8 +38,8 @@ export const SoundHealing = () => {
                                 <li className="text-white relative py-5">Just come as you are</li>
                             </ul>
                         </ScrollAnimate>
-                              <section className="w-full mx-auto max-w-335 sm:px-5 px-4">
-                <div className="relative overflow-hidden rounded-lg bg-[radial-gradient(at_0%_0%,rgb(26,117,103)_0%,rgb(5,61,53)_100%)] p-8 md:p-10 text-white shadow-card">
+                              <section className="w-full mx-auto max-w-335">
+                <div className="relative overflow-hidden rounded-lg bg-[radial-gradient(at_0%_0%,rgb(26,117,103)_0%,rgb(5,61,53)_100%)] p-4 md:p-10 text-white shadow-card">
                     <div className="absolute -top-24 -right-20 h-64 w-64 rounded-full bg-white/10" />
                     <div className="absolute -bottom-16 -left-16 h-44 w-44 rounded-full bg-white/5" />
                     <div className="absolute right-8 top-6 text-7xl opacity-10">
@@ -47,7 +47,7 @@ export const SoundHealing = () => {
                     </div>
 
                     <div className="relative z-10">
-                        <div className="flex items-center gap-5 mb-5">
+                        <div className="flex items-center flex-wrap sm:flex-nowrap sm:gap-5 gap-2 mb-5">
                             <Image src={Instragram} alt="Instagram Icon" className="w-10 h-10" aria-hidden="true" />
                             <div className="rounded-md border border-white/10 bg-glass px-4 py-2 backdrop-blur-md">
                                 <span className="text-small text-accent">
@@ -61,7 +61,7 @@ export const SoundHealing = () => {
                         <p className="mt-2 text-body text-lg text-white/90">
                             @soulhealing_by_aeny    
                         </p>
-                        <p className="mt-5 max-w-xl text-body text-muted leading-relaxed">
+                        <p className="sm:mt-5 mt-2.5 max-w-xl text-body text-muted leading-relaxed">
                             Follow me on Instagram for creative work, updates, behind-the-scenes content and daily inspiration.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-4">
@@ -69,7 +69,7 @@ export const SoundHealing = () => {
                                 href="https://instagram.com/soulhealing_by_aeny"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group inline-flex cursor-pointer items-center justify-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold transition-all duration-500 hover:bg-white hover:text-dark-green w-full"
+                                className="group inline-flex cursor-pointer items-center justify-center gap-2 sm:px-8 px-4 py-3.5 bg-orange text-white rounded-full font-bold transition-all duration-500 hover:bg-white hover:text-dark-green w-full"
                             >
                                 Connect on Instagram
                             </a>
