@@ -107,26 +107,25 @@ export const Pricing = () => {
 
               </div>
             </ScrollAnimate>
-            <div className="block sm:hidden">
+            <div className="block sm:hidden slider-container">
               <Swiper
-                spaceBetween={20}
-                breakpoints={{
-                  640: {
-                    slidesPerView: 1,
-                  },
-                  768: {
-                    slidesPerView: 2,
-                  },
-                  1024: {
-                    slidesPerView: 2,
-                  },
-                }}
+                spaceBetween={10}
+                 coverflowEffect={{
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2,
+    scale: 0.9,
+  }}
+   grabCursor
+                slidesPerView={1.2}
+                centeredSlides={true}
               >
                 <SwiperSlide>
-                    <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className="bg-green max-w-full sm:max-w-[calc(50%-10px)] w-full rounded-[30px] p-5 text-white flex flex-col justify-between min-h-95">
+                    <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className="bg-green max-w-full w-full rounded-[30px] p-3 text-white flex flex-col justify-between min-h-95">
                   <div>
-                    <h3 className="xl:text-[28px] text-2xl font-bold mb-4 text-center ">Sound Healing</h3>
-                    <div className="mb-5 flex items-baseline before:rounded-[20px] p-5 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
+                    <h3 className="xl:text-[28px] sm:text-2xl xs:text-xl text-lg font-bold mb-4 text-center ">Sound Healing</h3>
+                    <div className="mb-5 flex items-baseline before:rounded-[20px] sm:p-5 p-3 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
                       <div className='relative z-10 flex justify-between items-center w-full gap-2 xl:flex-nowrap flex-wrap'>
                         <p className='text-white text-[16px] lg:text-[18px] font-semibold leading-[1.4]'>
                           1x Private Session
@@ -146,10 +145,10 @@ export const Pricing = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-              <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className="bg-green max-w-full sm:max-w-[calc(50%-10px)] w-full rounded-[30px] p-5 text-white flex flex-col justify-between min-h-95">
+              <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className="bg-green max-w-full sm:max-w-[calc(50%-10px)] w-full rounded-[30px] p-3 text-white flex flex-col justify-between min-h-95">
                   <div>
-                    <h3 className="xl:text-[28px] text-2xl font-bold mb-4 text-center ">Reiki Energy</h3>
-                    <div className="mb-5 flex items-baseline before:rounded-[20px] p-5 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
+                    <h3 className="xl:text-[28px] sm:text-2xl xs:text-xl text-lg font-bold mb-4 text-center ">Reiki Energy</h3>
+                    <div className="mb-5 flex items-baseline before:rounded-[20px] sm:p-5 p-3 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
                       <div className='relative z-10 flex justify-between items-center w-full gap-2 xl:flex-nowrap flex-wrap'>
                         <p className='text-white text-[16px] lg:text-[18px] font-semibold leading-[1.4]'>
                           4x Session Pkg
@@ -169,10 +168,10 @@ export const Pricing = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.25} className="bg-green max-w-full sm:max-w-[calc(50%-10px)] w-full rounded-[30px] p-5 text-white flex flex-col justify-between min-h-95">
+                  <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.25} className="bg-green max-w-full sm:max-w-[calc(50%-10px)] w-full rounded-[30px] p-3 text-white flex flex-col justify-between min-h-95">
                   <div>
-                    <h3 className="xl:text-[28px] text-2xl font-bold mb-4 text-center ">Embodied Yoga</h3>
-                    <div className="mb-5 flex items-baseline before:rounded-[20px] p-5 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
+                    <h3 className="xl:text-[28px] sm:text-2xl xs:text-xl text-lg font-bold mb-4 text-center ">Embodied Yoga</h3>
+                    <div className="mb-5 flex items-baseline before:rounded-[20px] sm:p-5 p-3 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
                       <div className='relative z-10 flex justify-between items-center w-full gap-2 xl:flex-nowrap flex-wrap'>
                         <p className='text-white text-[16px] lg:text-[18px] font-semibold leading-[1.4]'>
                           1x Private Session
@@ -193,10 +192,10 @@ export const Pricing = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.25} className="bg-green max-w-full sm:max-w-[calc(50%-10px)] w-full rounded-[30px] p-5 text-white flex flex-col justify-between min-h-95">
+                    <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.25} className="bg-green max-w-full sm:max-w-[calc(50%-10px)] w-full rounded-[30px] p-3 text-white flex flex-col justify-between min-h-95">
                   <div>
-                    <h3 className="xl:text-[28px] text-2xl font-bold mb-4 text-center ">Guided Meditation</h3>
-                    <div className="mb-5 flex items-baseline before:rounded-[20px] p-5 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
+                    <h3 className="xl:text-[28px] sm:text-2xl xs:text-xl text-lg font-bold mb-4 text-center ">Guided Meditation</h3>
+                    <div className="mb-5 flex items-baseline before:rounded-[20px] sm:p-5 p-3 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
                       <div className='relative z-10 flex justify-between items-center w-full gap-2 xl:flex-nowrap flex-wrap'>
                         <p className='text-white text-[16px] lg:text-[18px] font-semibold leading-[1.4]'>
                           4x Session Pkg

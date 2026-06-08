@@ -113,59 +113,59 @@ recaptchaRef.current?.reset();
           </ScrollAnimate>
 
           {/* Staggered Step Cards Grid */}
-          <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.15} className='flex gap-5 flex-wrap justify-between'>
+          <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.15} className='flex sm:gap-5 gap-3 flex-wrap justify-between'>
 
             {/* Step 1 */}
-            <div className='p-7.5 bg-[radial-gradient(at_0%_0%,rgb(26,117,103)_0%,rgb(5,61,53)_100%)] rounded-[20px] max-w-full sm:max-w-[calc(50%-10px)] w-full min-h-55 flex flex-col justify-between'>
+            <div className='sm:p-7.5 p-3 bg-[radial-gradient(at_0%_0%,rgb(26,117,103)_0%,rgb(5,61,53)_100%)] rounded-[20px] sm:max-w-[calc(50%-10px)] max-w-[calc(50%-6px)] w-full min-h-55 flex flex-col justify-between'>
               <div className='flex items-start justify-between mb-5 '>
-                <Image src={Icon01} alt='Choose Your Therapy step icon' className='max-w-15 w-full ' />
-                <h6 className='text-orange text-base font-semibold leading-normal'>01</h6>
+                <Image src={Icon01} alt='Choose Your Therapy step icon' className='sm:max-w-15 max-w-10 w-full ' />
+                <h6 className='text-orange sm:text-base text-sm font-semibold leading-normal'>01</h6>
               </div>
               <div>
-                <h5 className='text-white md:text-2xl text-lg font-semibold leading-normal mb-2'>Choose Your Therapy</h5>
-                <p className='text-base text-border dm-sans leading-normal'>
+                <h5 className='text-white md:text-2xl sm:text-lg text-sm font-semibold leading-normal mb-2'>Choose Your Therapy</h5>
+                <p className='sm:text-base text-[12px]  text-border dm-sans leading-normal'>
                   Select from our sound healing, sleep rituals, or custom sessions.
                 </p>
               </div>
             </div>
 
             {/* Step 2 */}
-            <div className='p-7.5 bg-[#fcfcfa] border border-light rounded-[20px] max-w-full sm:max-w-[calc(50%-10px)] w-full min-h-55 flex flex-col justify-between'>
+            <div className='sm:p-7.5 p-3 bg-[#fcfcfa] border border-light rounded-[20px] sm:max-w-[calc(50%-10px)] max-w-[calc(50%-6px)] w-full min-h-55 flex flex-col justify-between'>
               <div className='flex items-start justify-between mb-5 '>
-                <Image src={Icon02} alt='Pick a Date & Time step icon' className='max-w-15 w-full ' />
-                <h6 className='text-green text-base font-semibold leading-normal'>02</h6>
+                <Image src={Icon02} alt='Pick a Date & Time step icon' className='sm:max-w-15 max-w-10 w-full ' />
+                <h6 className='text-green sm:text-base text-sm font-semibold leading-normal'>02</h6>
               </div>
               <div>
-                <h5 className='text-primary md:text-2xl text-lg font-semibold leading-normal mb-2'>Pick a Date & Time</h5>
-                <p className='text-base text-text dm-sans leading-normal'>
+                <h5 className='text-primary md:text-2xl sm:text-lg text-sm font-semibold leading-normal mb-2'>Pick a Date & Time</h5>
+                <p className='sm:text-base text-[12px] text-text dm-sans leading-normal'>
                   Our calendar offers flexible slots to match your rhythm.
                 </p>
               </div>
             </div>
 
             {/* Step 3 */}
-            <div className='p-7.5 bg-[#fcfcfa] border border-light rounded-[20px] max-w-full sm:max-w-[calc(50%-10px)] w-full min-h-55 flex flex-col justify-between'>
+            <div className='sm:p-7.5 p-3 bg-[#fcfcfa] border border-light rounded-[20px] sm:max-w-[calc(50%-10px)] max-w-[calc(50%-6px)] w-full min-h-55 flex flex-col justify-between'>
               <div className='flex items-start justify-between mb-5 '>
-                <Image src={Icon03} alt='Share a Few Details step icon' className='max-w-15 w-full ' />
-                <h6 className='text-green text-base font-semibold leading-normal'>03</h6>
+                <Image src={Icon03} alt='Share a Few Details step icon' className='sm:max-w-15 max-w-10 w-full ' />
+                <h6 className='text-green sm:text-base text-sm font-semibold leading-normal'>03</h6>
               </div>
               <div>
-                <h5 className='text-primary md:text-2xl text-lg font-semibold leading-normal mb-2'>Share a Few Details</h5>
-                <p className='text-base text-text dm-sans leading-normal'>
+                <h5 className='text-primary md:text-2xl sm:text-lg text-sm font-semibold leading-normal mb-2'>Share a Few Details</h5>
+                <p className='sm:text-base text-[12px] text-text dm-sans leading-normal'>
                   Tell us what you’re looking for so we can guide you better.
                 </p>
               </div>
             </div>
 
             {/* Step 4 */}
-            <div className='p-7.5 bg-[#fcfcfa] border border-light rounded-[20px] max-w-full sm:max-w-[calc(50%-10px)] w-full min-h-55 flex flex-col justify-between'>
+            <div className='sm:p-7.5 p-3 bg-[#fcfcfa] border border-light rounded-[20px] sm:max-w-[calc(50%-10px)] max-w-[calc(50%-6px)] w-full min-h-55 flex flex-col justify-between'>
               <div className='flex items-start justify-between mb-5 '>
-                <Image src={Icon04} alt='Receive Confirmation step icon' className='max-w-15 w-full ' />
-                <h6 className='text-green text-base font-semibold leading-normal'>04</h6>
+                <Image src={Icon04} alt='Receive Confirmation step icon' className='sm:max-w-15 max-w-10 w-full ' />
+                <h6 className='text-green sm:text-base text-sm font-semibold leading-normal'>04</h6>
               </div>
               <div>
-                <h5 className='text-primary md:text-2xl text-lg  font-semibold leading-normal mb-2'>Receive Confirmation</h5>
-                <p className='text-base text-text dm-sans leading-normal'>
+                <h5 className='text-primary md:text-2xl sm:text-lg text-sm  font-semibold leading-normal mb-2'>Receive Confirmation</h5>
+                <p className='sm:text-base text-[12px] text-text dm-sans leading-normal'>
                   We’ll send a gentle reminder and welcome you in a calm setting.
                 </p>
               </div>

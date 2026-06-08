@@ -32,7 +32,7 @@ export const HealingExperience = () => {
                     <div className='flex flex-col lg:flex-row gap-5'>
                         {/* Schedule Cards Grid with Stagger */}
                         <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.15} className='flex flex-col md:flex-row w-full sm:gap-5 gap-3'>
-                            <div className='flex flex-row sm:gap-5 gap-3 md:max-w-106 w-full '>
+                            <div className='flex flex-row md:flex-col sm:gap-5 gap-3 md:max-w-106 w-full '>
                                 <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className='h-[stretch]  bg-[url(/images/about2.jpg)] w-full bg-center bg-no-repeat bg-cover sm:p-[170px_20px_20px] p-[70px_12px_12px]  relative rounded-[20px] before:content-[""] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[20px] before:opacity-100 flex flex-col justify-end'>
                                     <div className='flex flex-col justify-end  h-full relative z-10'>
                                         <div className="flex flex-col justify-end">
@@ -50,7 +50,7 @@ export const HealingExperience = () => {
                                     </div>
                                 </ScrollAnimate>
                             </div>
-                            <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className='bg-[url(/images/schedule.jpg)] w-full min-h-87.5 bg-center bg-no-repeat bg-cover sm:p-7.5 p-4 relative rounded-[20px] before:content-[""] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[20px] before:opacity-100 flex flex-col justify-end'>
+                            <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className='bg-[url(/images/schedule.jpg)] w-full sm:min-h-87.5 min-h-55 bg-center bg-no-repeat bg-cover sm:p-7.5 p-4 relative rounded-[20px] before:content-[""] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[20px] before:opacity-100 flex flex-col justify-end'>
                                 <div className='flex flex-col justify-end h-full relative z-10'>
                                 
                                     <div>
@@ -59,7 +59,7 @@ export const HealingExperience = () => {
                                     </div>
                                 </div>
                             </ScrollAnimate>
-                            <div className='flex flex-row sm:gap-5 gap-3 md:max-w-106 w-full '>
+                            <div className='flex flex-row md:flex-col sm:gap-5 gap-3 md:max-w-106 w-full '>
                                 <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className='h-[stretch]  bg-[url(/images/schedule-01.jpg)] w-full bg-center bg-no-repeat bg-cover sm:p-[170px_20px_20px] p-[70px_12px_12px] relative rounded-[20px] before:content-[""] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[20px] before:opacity-100 flex flex-col justify-end'>
                                     <div className='flex flex-col justify-end  h-full relative z-10'>
                                         <div className="flex flex-col justify-end">
