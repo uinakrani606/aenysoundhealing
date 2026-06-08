@@ -101,7 +101,7 @@ recaptchaRef.current?.reset();
               />
               <span className="text-[#2e2e2e] font-semibold text-lg">Plan Your Healing Journey</span>
             </div>
-            <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal tablet:mb-5'>
+            <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] tablet:mb-5'>
               Book a Personalized Sleep & Sound Session
             </h2>
           </ScrollAnimate>

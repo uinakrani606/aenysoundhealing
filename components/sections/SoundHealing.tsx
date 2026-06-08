@@ -18,13 +18,13 @@ export const SoundHealing = () => {
                         <span className="text-white font-semibold sm:text-lg text-base">Understanding Sound</span>
                     </ScrollAnimate>
                     <ScrollAnimate animation="fade-up" duration={0.8}>
-                        <h2 className='text-white text-center xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal sm:mb-10 mb-5'>
+                        <h2 className='text-white text-center xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] sm:mb-10 mb-5'>
                             Experience the Healing Power of Sound
                         </h2>
                     </ScrollAnimate>
                     <div className="flex xl:gap-20 lg:gap-12 md:gap-8 gap-4 items-center tablet:flex-nowrap flex-wrap">
                         <ScrollAnimate animation="slide-left" duration={0.8}>
-                            <p className='dm-sans text-left w-full mx-auto text-lg text-border leading-[1.6] mb-5'>
+                            <p className='dm-sans text-left w-full mx-auto sm:text-lg text-sm text-border leading-[1.6] mb-5'>
                                 Sound healing is a gentle, non-invasive practice that uses soothing vibrations and therapeutic frequencies to help calm your nervous system, quiet mental chatter, and restore emotional balance.
                             </p>
                             <div className="sm:text-lg text-base block leading-[1.7] py-3 px-4 text-white rounded-[10px] text-left border-l-3 border-orange font-semibold bg-[#f38c6417]">
