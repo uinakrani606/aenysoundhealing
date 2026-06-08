@@ -32,19 +32,19 @@ export const About = () => {
               />
               <span className="text-[#2e2e2e] font-semibold sm:text-lg text-base">The Heart of Aeny</span>
             </div>
-            <h2 className="text-[#2e2e2e] xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal mt-4">
+            <h2 className="text-[#2e2e2e] xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-normal mt-4">
               A Space to Pause, Heal & Reconnect
             </h2>
           </ScrollAnimate>
 
           <ScrollAnimate animation="fade-up" duration={0.8} delay={0.15}>
-            <p className="text-text sm:text-lg text-[12px] dm-sans leading-[1.6]">
+            <p className="text-text sm:text-lg text-sm dm-sans leading-[1.6]">
               Nestled in the heart of Surat, Aeny offers a calming retreat from the demands of modern life. We believe that true wellness begins when the mind slows down and the body feels safe enough to rest.
             </p>
-            <p className="text-text sm:text-lg text-[12px] dm-sans leading-[1.6] mt-4">
+            <p className="text-text sm:text-lg text-sm dm-sans leading-[1.6] mt-4">
               Through personalized sound healing and holistic wellness experiences, we help individuals release stress, improve sleep, restore emotional balance, and reconnect with their natural rhythm. Every session is guided with care, intention, and a deep understanding of the body's need for rest and renewal.
             </p>
-            <p className="text-text sm:text-lg text-[12px] dm-sans leading-[1.6] mt-4">
+            <p className="text-text sm:text-lg text-sm dm-sans leading-[1.6] mt-4">
               Whether you seek relief from everyday stress or a deeper connection with yourself, Aeny provides a welcoming space where healing unfolds naturally.
             </p>
           </ScrollAnimate>

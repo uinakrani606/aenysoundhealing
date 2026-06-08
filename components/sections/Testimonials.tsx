@@ -20,7 +20,7 @@ export const Testimonials = () => {
                 />
                 <span className="text-[#2e2e2e] font-semibold sm:text-lg text-base">Testimonials</span>
               </div>
-              <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal'>
+              <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8]'>
                 What Our Clients Are Saying
               </h2>
               <p className='dm-sans sm:text-lg text-sm text-text leading-normal'>
@@ -30,7 +30,7 @@ export const Testimonials = () => {
           </div>
           <div className='tablet:max-w-[58%] w-full bg-[radial-gradient(at_0%_100%,rgb(26,117,103)_28%,rgb(5,61,53)_100%)] md:p-10 p-6 rounded-[20px] tablet:rounded-bl-none'>
             <div className='flex  flex-col h-full  justify-between'>
-              <p className=' md:text-[27px]  sm:text-2xl text-lg font-normal text-white mb-12.5'>“I walked in carrying the weight of the world. After one sound healing session, I felt completely weightless. Profoundly transformative.”</p>
+              <p className=' md:text-[27px]  sm:text-2xl xs:text-lg text-base font-normal text-white mb-12.5'>“I walked in carrying the weight of the world. After one sound healing session, I felt completely weightless. Profoundly transformative.”</p>
               <div className='flex items-center justify-between'>
                 <div className='flex items-center gap-5'>
                   <div className='max-w-17.5 w-full h-17.5 rounded-full'>
@@ -62,7 +62,7 @@ export const Testimonials = () => {
               <div className='flex gap-7.5 lg:flex-nowrap flex-wrap'>
                 <div className='bg-secondary rounded-[15px] p-5 shadow-[-10px_10px_0px_0px_rgba(250,250,250,0.27)]' >
                   <div>
-                    <p className='text-[55px] font-semibold text-green leading-none mb-2.5'>4.9<span className='text-[32px]'>+</span></p>
+                    <p className='md:text-[55px] text-[40px] font-semibold text-green leading-none mb-2.5'>4.9<span className='text-[32px]'>+</span></p>
                     <div className='flex items-center gap-1 mb-2.5 '>
                       <Image src={StarYellow} alt="" aria-hidden="true" className='max-w-5 w-full' />
                       <Image src={StarYellow} alt="" aria-hidden="true" className='max-w-5 w-full' />
@@ -74,7 +74,7 @@ export const Testimonials = () => {
                   </div>
                 </div>
                 <div className='sm:max-w-68.25 w-full flex flex-col justify-between'>
-                  <h5 className='text-white sm:text-[24px] text-lg font-semibold leading-[1.3]'>We’re grateful for the kind words, love, and trust from our healing community</h5>
+                  <h5 className='text-white md:text-[24px] text-base font-semibold leading-[1.3]'>We’re grateful for the kind words, love, and trust from our healing community</h5>
                   <a href="#0" className='flex items-center text-orange text-base font-medium gap-2.5'>
                     See all Reviews
                     <svg className='w-4 h-4 fill-orange' aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg>
@@ -84,17 +84,17 @@ export const Testimonials = () => {
               <div className='bg-glass w-fit flex xs:flex-nowrap flex-wrap  relative items-center gap-2.5  rounded-[15px] p-5 before:content-[""] before:absolute before:w-full before:h-full before:backdrop-blur-[6px] before:inset-0 z-99 before:z-[-1] before:rounded-[15px] '>
                  
                 <div>
-                  <h6 className='text-white xl:text-[55px] text-4xl font-semibold leading-none mb-2.5 text-center'>
+                  <h6 className='text-white xl:text-[55px] sm:text-4xl text-2xl font-semibold leading-none mb-2.5 text-center'>
                     1,200 <span className='text-[32px] text-orange'>+</span>
                   </h6>
-                  <p className='text-base font-semibold text-center text-white'>Over 1,200 Healing Journeys Shared</p>
+                  <p className='sm:text-base text-xs font-semibold text-center text-white'>Over 1,200 Healing Journeys Shared</p>
                 </div>
                 <div className='xs:border-l xs:border-t-0  border-t xs:w-auto w-full border-orange xs:h-[stretch] ' ></div>
                 <div>
-                  <h6 className='text-white xl:text-[55px] text-4xl font-semibold leading-none mb-2.5 text-center'>
+                  <h6 className='text-white xl:text-[55px] sm:text-4xl text-2xl font-semibold leading-none mb-2.5 text-center'>
                     10 <span className='text-[32px] text-orange'>+</span>
                   </h6>
-                  <p className='text-base font-semibold text-center text-white'>Over 1,200 Healing Journeys Shared</p>
+                  <p className='sm:text-base text-xs font-semibold text-center text-white'>Over 1,200 Healing Journeys Shared</p>
                 </div>
               </div>
             </div>
@@ -104,7 +104,7 @@ export const Testimonials = () => {
             <div className='bg-secondary pt-10 tablet:pl-10 rounded-tl-[50px] h-full '>
               <div>
                 <div className='flex items-center justify-between gap-5 border-b border-border pb-6.25 xs:flex-nowrap flex-wrap'>
-                  <h5 className='md:text-[32px] sm:text-[26px] text-[24px] text-primary font-semibold leading-[1.3]'>Most Loved Therapy</h5>
+                  <h5 className='md:text-[32px] sm:text-[26px] xs:text-[24px] text-xl text-primary font-semibold leading-[1.3]'>Most Loved Therapy</h5>
                   <a className="inline-flex text-nowrap items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-green  transition-all duration-300" href="#booking">Reserve Your Spot</a>
                 </div>
                 <div className='flex overflow-auto items-center md:gap-11.25 gap-5 pt-6.25 mb-5'>

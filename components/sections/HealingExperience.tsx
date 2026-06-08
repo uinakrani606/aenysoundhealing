@@ -20,10 +20,10 @@ export const HealingExperience = () => {
                                 />
                                 <span className="text-[#2e2e2e] font-semibold sm:text-lg text-base">Your Journey</span>
                             </div>
-                            <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal max-w-184.25 mb-5'>
+                            <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] max-w-184.25 mb-5'>
                                The Healing Experience
                             </h2>
-                            <p className="sm:text-lg text-[12px] dm-sans leading-normal text-text tablet:mb-5"><i>"Every experience is unique."</i> Your only role is to receive.
+                            <p className="sm:text-lg text-sm dm-sans leading-normal text-text tablet:mb-5"><i>"Every experience is unique."</i> Your only role is to receive.
                             </p>
                         </div>
                         <a className="inline-flex text-nowrap items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-green  transition-all duration-300" href="#booking">Begin Your Journey</a>

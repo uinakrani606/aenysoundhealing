@@ -110,112 +110,108 @@ export const Pricing = () => {
             <div className="block sm:hidden slider-container">
               <Swiper
                 spaceBetween={10}
-                 coverflowEffect={{
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 2,
-    scale: 0.9,
-  }}
-   grabCursor
+                coverflowEffect={{
+                  rotate: 0,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 2,
+                  scale: 0.9,
+                }}
+                grabCursor
                 slidesPerView={1.2}
                 centeredSlides={true}
               >
                 <SwiperSlide>
-                    <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className="bg-green max-w-full w-full rounded-[30px] p-3 text-white flex flex-col justify-between min-h-95">
-                  <div>
-                    <h3 className="xl:text-[28px] sm:text-2xl xs:text-xl text-lg font-bold mb-4 text-center ">Sound Healing</h3>
-                    <div className="mb-5 flex items-baseline before:rounded-[20px] sm:p-5 p-3 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
-                      <div className='relative z-10 flex justify-between items-center w-full gap-2 xl:flex-nowrap flex-wrap'>
-                        <p className='text-white text-[16px] lg:text-[18px] font-semibold leading-[1.4]'>
-                          1x Private Session
-                        </p>
-                        <p className='flex text-[32px] lg:text-[40px] text-orange font-semibold items-center leading-none text-nowrap'>
-                          <span className='text-orange text-[20px]'>₹</span>
-                          4667
-                        </p>
+                  <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className="bg-green max-w-full w-full rounded-[30px] p-3 text-white flex flex-col justify-between sm:min-h-95">
+                    <div>
+                      <h3 className="xl:text-[28px] sm:text-2xl xs:text-xl text-lg font-bold mb-4 text-center ">Sound Healing</h3>
+                      <div className="mb-5 flex items-baseline before:rounded-[20px] sm:p-5 p-3 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
+                        <div className='relative z-10 flex justify-between items-center w-full gap-2 xl:flex-nowrap flex-wrap'>
+                          <p className='text-white text-[16px] lg:text-[18px] font-semibold leading-[1.4]'>
+                            1x Private Session
+                          </p>
+                          <p className='flex text-[32px] lg:text-[40px] text-orange font-semibold items-center leading-none text-nowrap'>
+                            <span className='text-orange text-[20px]'>₹</span>
+                            4667
+                          </p>
+                        </div>
                       </div>
+                      <p className='mb-5 sm:text-base text-[12px] dm-sans text-white/80 leading-normal'>
+                        Let the resonant vibrations of ancient singing bowls wash over you — no effort required. Pure, passive, profound.
+                      </p>
                     </div>
-                    <p className='mb-5 sm:text-base text-[12px] dm-sans text-white/80 leading-normal'>
-                      Let the resonant vibrations of ancient singing bowls wash over you — no effort required. Pure, passive, profound.
-                    </p>
-                  </div>
-                  <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Start Healing</a>
-                </ScrollAnimate>
+                    <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Start Healing</a>
+                  </ScrollAnimate>
                 </SwiperSlide>
-
                 <SwiperSlide>
-              <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className="bg-green max-w-full sm:max-w-[calc(50%-10px)] w-full rounded-[30px] p-3 text-white flex flex-col justify-between min-h-95">
-                  <div>
-                    <h3 className="xl:text-[28px] sm:text-2xl xs:text-xl text-lg font-bold mb-4 text-center ">Reiki Energy</h3>
-                    <div className="mb-5 flex items-baseline before:rounded-[20px] sm:p-5 p-3 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
-                      <div className='relative z-10 flex justify-between items-center w-full gap-2 xl:flex-nowrap flex-wrap'>
-                        <p className='text-white text-[16px] lg:text-[18px] font-semibold leading-[1.4]'>
-                          4x Session Pkg
-                        </p>
-                        <p className='flex text-[32px] lg:text-[40px] text-orange font-semibold items-center leading-none text-nowrap'>
-                          <span className='text-orange text-[20px]'>₹</span>
-                          5619
-                        </p>
+                  <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className="bg-green max-w-full sm:max-w-[calc(50%-10px)] w-full rounded-[30px] p-3 text-white flex flex-col justify-between sm:min-h-95">
+                    <div>
+                      <h3 className="xl:text-[28px] sm:text-2xl xs:text-xl text-lg font-bold mb-4 text-center ">Reiki Energy</h3>
+                      <div className="mb-5 flex items-baseline before:rounded-[20px] sm:p-5 p-3 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
+                        <div className='relative z-10 flex justify-between items-center w-full gap-2 xl:flex-nowrap flex-wrap'>
+                          <p className='text-white text-[16px] lg:text-[18px] font-semibold leading-[1.4]'>
+                            4x Session Pkg
+                          </p>
+                          <p className='flex text-[32px] lg:text-[40px] text-orange font-semibold items-center leading-none text-nowrap'>
+                            <span className='text-orange text-[20px]'>₹</span>
+                            5619
+                          </p>
+                        </div>
                       </div>
+                      <p className='mb-5 sm:text-base text-[12px] dm-sans text-white/80 leading-normal'>
+                        Universal life energy flows gently through the body to dissolve blockages and restore your natural rhythm.
+                      </p>
                     </div>
-                    <p className='mb-5 sm:text-base text-[12px] dm-sans text-white/80 leading-normal'>
-                      Universal life energy flows gently through the body to dissolve blockages and restore your natural rhythm.
-                    </p>
-                  </div>
-                  <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Start Healing</a>
-                </ScrollAnimate>
+                    <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Start Healing</a>
+                  </ScrollAnimate>
                 </SwiperSlide>
-
                 <SwiperSlide>
-                  <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.25} className="bg-green max-w-full sm:max-w-[calc(50%-10px)] w-full rounded-[30px] p-3 text-white flex flex-col justify-between min-h-95">
-                  <div>
-                    <h3 className="xl:text-[28px] sm:text-2xl xs:text-xl text-lg font-bold mb-4 text-center ">Embodied Yoga</h3>
-                    <div className="mb-5 flex items-baseline before:rounded-[20px] sm:p-5 p-3 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
-                      <div className='relative z-10 flex justify-between items-center w-full gap-2 xl:flex-nowrap flex-wrap'>
-                        <p className='text-white text-[16px] lg:text-[18px] font-semibold leading-[1.4]'>
-                          1x Private Session
-                        </p>
-                        <p className='flex text-[32px] lg:text-[40px] text-orange font-semibold items-center leading-none text-nowrap'>
-                          <span className='text-orange text-[20px]'>₹</span>
-                          4667
-                        </p>
+                  <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.25} className="bg-green max-w-full sm:max-w-[calc(50%-10px)] w-full rounded-[30px] p-3 text-white flex flex-col justify-between sm:min-h-95">
+                    <div>
+                      <h3 className="xl:text-[28px] sm:text-2xl xs:text-xl text-lg font-bold mb-4 text-center ">Embodied Yoga</h3>
+                      <div className="mb-5 flex items-baseline before:rounded-[20px] sm:p-5 p-3 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
+                        <div className='relative z-10 flex justify-between items-center w-full gap-2 xl:flex-nowrap flex-wrap'>
+                          <p className='text-white text-[16px] lg:text-[18px] font-semibold leading-[1.4]'>
+                            1x Private Session
+                          </p>
+                          <p className='flex text-[32px] lg:text-[40px] text-orange font-semibold items-center leading-none text-nowrap'>
+                            <span className='text-orange text-[20px]'>₹</span>
+                            4667
+                          </p>
+                        </div>
                       </div>
+                      <p className='mb-5 sm:text-base text-[12px] dm-sans text-white/80 leading-normal'>
+                        Movement as a coming-home. Reclaim your body as a sacred space through mindful, gentle flow.
+                      </p>
                     </div>
-                    <p className='mb-5 sm:text-base text-[12px] dm-sans text-white/80 leading-normal'>
-                      Movement as a coming-home. Reclaim your body as a sacred space through mindful, gentle flow.
-                    </p>
-                  </div>
-                  <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Book Now</a>
-                </ScrollAnimate>
+                    <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Book Now</a>
+                  </ScrollAnimate>
 
                 </SwiperSlide>
-
                 <SwiperSlide>
-                    <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.25} className="bg-green max-w-full sm:max-w-[calc(50%-10px)] w-full rounded-[30px] p-3 text-white flex flex-col justify-between min-h-95">
-                  <div>
-                    <h3 className="xl:text-[28px] sm:text-2xl xs:text-xl text-lg font-bold mb-4 text-center ">Guided Meditation</h3>
-                    <div className="mb-5 flex items-baseline before:rounded-[20px] sm:p-5 p-3 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
-                      <div className='relative z-10 flex justify-between items-center w-full gap-2 xl:flex-nowrap flex-wrap'>
-                        <p className='text-white text-[16px] lg:text-[18px] font-semibold leading-[1.4]'>
-                          4x Session Pkg
-                        </p>
-                        <p className='flex text-[32px] lg:text-[40px] text-orange font-semibold items-center leading-none text-nowrap'>
-                          <span className='text-orange text-[20px]'>₹</span>
-                          5619
-                        </p>
+                  <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.25} className="bg-green max-w-full sm:max-w-[calc(50%-10px)] w-full rounded-[30px] p-3 text-white flex flex-col justify-between sm:min-h-95">
+                    <div>
+                      <h3 className="xl:text-[28px] sm:text-2xl xs:text-xl text-lg font-bold mb-4 text-center ">Guided Meditation</h3>
+                      <div className="mb-5 flex items-baseline before:rounded-[20px] sm:p-5 p-3 before:bg-dark-green relative before:content-[''] before:absolute before:w-full before:h-full before:opacity-50 before:inset-0">
+                        <div className='relative z-10 flex justify-between items-center w-full gap-2 xl:flex-nowrap flex-wrap'>
+                          <p className='text-white text-[16px] lg:text-[18px] font-semibold leading-[1.4]'>
+                            4x Session Pkg
+                          </p>
+                          <p className='flex text-[32px] lg:text-[40px] text-orange font-semibold items-center leading-none text-nowrap'>
+                            <span className='text-orange text-[20px]'>₹</span>
+                            5619
+                          </p>
+                        </div>
                       </div>
+                      <p className='mb-5 sm:text-base text-[12px] dm-sans text-white/80 leading-normal'>
+                        A guided journey inward — suitable for beginners and seasoned practitioners alike.
+                      </p>
                     </div>
-                    <p className='mb-5 sm:text-base text-[12px] dm-sans text-white/80 leading-normal'>
-                      A guided journey inward — suitable for beginners and seasoned practitioners alike.
-                    </p>
-                  </div>
-                  <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Book Now</a>
-                </ScrollAnimate>
+                    <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Book Now</a>
+                  </ScrollAnimate>
                 </SwiperSlide>
               </Swiper>
             </div>
-
             {/* Right Column - Info Block */}
             <ScrollAnimate animation="fade-up" duration={0.8} delay={0.15} className="max-w-full lg:max-w-[40%] w-full flex flex-col justify-between gap-12 self-stretch">
               <div>
@@ -228,7 +224,7 @@ export const Pricing = () => {
                   />
                   <span className="text-white font-semibold sm:text-lg text-base">Pricing Packages</span>
                 </div>
-                <h2 className='text-white xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal mb-5'>
+                <h2 className='text-white xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] mb-5'>
                   Choose the Right Path for You
                 </h2>
                 <p className='dm-sans sm:text-lg text-sm text-border leading-[1.6] mb-5'>
