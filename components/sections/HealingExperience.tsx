@@ -59,8 +59,8 @@ export const HealingExperience = () => {
                                     </div>
                                 </div>
                             </ScrollAnimate>
-                            <div className='flex flex-row md:flex-col sm:gap-5 gap-3 md:max-w-106 w-full '>
-                                <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className='bg-[url(/images/schedule-01.jpg)] w-full bg-center bg-no-repeat bg-cover sm:p-[170px_20px_20px] p-[70px_12px_12px] relative rounded-[20px] before:content-[""] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[20px] before:opacity-100 flex flex-col justify-end'>
+                            <div className='flex flex-row md:flex-col sm:gap-5 gap-3 md:max-w-106 w-full h-full'>
+                                <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.20} className='bg-[url(/images/schedule-01.jpg)] w-full bg-center bg-no-repeat bg-cover sm:p-[170px_20px_20px] p-[70px_12px_12px] relative rounded-[20px] before:content-[""] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[20px] before:opacity-100 flex flex-col justify-end h-full'>
                                     <div className='flex flex-col justify-end  h-full relative z-10'>
                                         <div className="flex flex-col justify-end">
                                             <h4 className='sm:text-[24px] text-lg font-semibold leading-[1.3] text-secondary mb-1.5'>Release</h4>
@@ -68,7 +68,7 @@ export const HealingExperience = () => {
                                         </div>
                                     </div>
                                 </ScrollAnimate>
-                                <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.24} className='bg-[radial-gradient(at_0%_0%,rgb(26,117,103)_0%,rgb(5,61,53)_100%)] w-full sm:p-[170px_20px_20px] p-[70px_12px_12px] relative rounded-[20px] before:content-[""] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[20px] before:opacity-100 flex flex-col justify-end'>
+                                <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.24} className='bg-[radial-gradient(at_0%_0%,rgb(26,117,103)_0%,rgb(5,61,53)_100%)] w-full sm:p-[170px_20px_20px] p-[70px_12px_12px] relative rounded-[20px] before:content-[""] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[20px] before:opacity-100 flex flex-col justify-end h-full'>
                                     <div className='flex flex-col justify-end h-full relative z-10'>
                                         <div className="flex flex-col justify-end">
                                             <h4 className='sm:text-[24px] text-lg font-semibold leading-[1.3] text-secondary mb-1.5'>Return</h4>
