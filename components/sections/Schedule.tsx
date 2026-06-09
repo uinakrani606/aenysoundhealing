@@ -26,7 +26,7 @@ export const Schedule = () => {
                                Your Journey Begins with Each Session
                             </h2>
                         </div>
-                        <a className="inline-flex text-nowrap items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-green  transition-all duration-300" href="#booking">Reserve Your Spot</a>
+                        <a className="inline-flex text-nowrap items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-green  transition-all duration-300 tablet:text-lg md:text-base text-sm" href="#booking">Reserve Your Spot</a>
                     </ScrollAnimate>
 
                     <div className='flex flex-col lg:flex-row gap-5'>

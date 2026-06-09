@@ -36,7 +36,7 @@ export const Pricing = () => {
                       Let the resonant vibrations of ancient singing bowls wash over you — no effort required. Pure, passive, profound.
                     </p>
                   </div>
-                  <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Start Healing</a>
+                  <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300 tablet:text-lg md:text-base text-sm" href="#booking">Start Healing</a>
                 </ScrollAnimate>
 
                 {/* Package 2 */}
@@ -58,7 +58,7 @@ export const Pricing = () => {
                       Universal life energy flows gently through the body to dissolve blockages and restore your natural rhythm.
                     </p>
                   </div>
-                  <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Start Healing</a>
+                  <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300 tablet:text-lg md:text-base text-sm" href="#booking">Start Healing</a>
                 </ScrollAnimate>
 
                 {/* Package 3 */}
@@ -80,7 +80,7 @@ export const Pricing = () => {
                       Movement as a coming-home. Reclaim your body as a sacred space through mindful, gentle flow.
                     </p>
                   </div>
-                  <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Book Now</a>
+                  <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300 tablet:text-lg md:text-base text-sm" href="#booking">Book Now</a>
                 </ScrollAnimate>
 
                 {/* Package 4 */}
@@ -102,7 +102,7 @@ export const Pricing = () => {
                       A guided journey inward — suitable for beginners and seasoned practitioners alike.
                     </p>
                   </div>
-                  <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Book Now</a>
+                  <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300 tablet:text-lg md:text-base text-sm" href="#booking">Book Now</a>
                 </ScrollAnimate>
 
               </div>
@@ -140,7 +140,7 @@ export const Pricing = () => {
                         Let the resonant vibrations of ancient singing bowls wash over you — no effort required. Pure, passive, profound.
                       </p>
                     </div>
-                    <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Start Healing</a>
+                    <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300 tablet:text-lg md:text-base text-sm" href="#booking">Start Healing</a>
                   </ScrollAnimate>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -162,7 +162,7 @@ export const Pricing = () => {
                         Universal life energy flows gently through the body to dissolve blockages and restore your natural rhythm.
                       </p>
                     </div>
-                    <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Start Healing</a>
+                    <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300 tablet:text-lg md:text-base text-sm" href="#booking">Start Healing</a>
                   </ScrollAnimate>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -184,7 +184,7 @@ export const Pricing = () => {
                         Movement as a coming-home. Reclaim your body as a sacred space through mindful, gentle flow.
                       </p>
                     </div>
-                    <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Book Now</a>
+                    <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300 tablet:text-lg md:text-base text-sm" href="#booking">Book Now</a>
                   </ScrollAnimate>
 
                 </SwiperSlide>
@@ -207,7 +207,7 @@ export const Pricing = () => {
                         A guided journey inward — suitable for beginners and seasoned practitioners alike.
                       </p>
                     </div>
-                    <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300" href="#booking">Book Now</a>
+                    <a className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-white hover:text-orange transition-all duration-300 tablet:text-lg md:text-base text-sm" href="#booking">Book Now</a>
                   </ScrollAnimate>
                 </SwiperSlide>
               </Swiper>

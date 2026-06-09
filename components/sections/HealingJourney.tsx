@@ -175,7 +175,7 @@ recaptchaRef.current?.reset();
         </div>
 
         {/* Right Side Schedule Form Column */}
-        <ScrollAnimate animation="fade-up" duration={0.8} delay={0.2} className='bg-[radial-gradient(at_100%_100%,rgb(26,117,103)_0%,rgb(5,61,53)_100%)] xl:p-10 p-6 rounded-[20px] flex flex-col gap-10 max-w-full lg:max-w-[42%] w-full self-stretch'>
+        <ScrollAnimate animation="fade-up" duration={0.8} delay={0.2} className='bg-[radial-gradient(at_100%_100%,rgb(26,117,103)_0%,rgb(5,61,53)_100%)] xl:p-10 sm:p-6 p-4 rounded-[20px] flex flex-col gap-10 max-w-full lg:max-w-[42%] w-full self-stretch'>
           <h3 className='md:text-[32px] text-2xl text-white font-semibold text-center'>Schedule Your Session</h3>
           <form onSubmit={handleSubmit} className="flex flex-wrap gap-5">
             <div className='w-full sm:max-w-[calc(50%-10px)]'>
@@ -260,9 +260,9 @@ recaptchaRef.current?.reset();
                 disabled={loading}
               >
                 {loading ? (
-                  <span>Submitting...</span>
+                  <span className="tablet:text-lg md:text-base text-sm">Submitting...</span>
                 ) : (
-                  <span>Book Session</span>
+                  <span className="tablet:text-lg md:text-base text-sm">Book Session</span>
                 )}
                 <svg aria-hidden="true" className="w-4 fill-current transition-all duration-500" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg>
               </button>
