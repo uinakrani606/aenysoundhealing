@@ -50,14 +50,14 @@ export const Testimonials = () => {
           </div>
           <div className='tablet:max-w-[42%] relative bg-[url(/images/journeys.jpg)] w-full bg-center bg-no-repeat bg-cover rounded-[20px] tablet:rounded-tr-none xl:p-10 p-6 before:content-[""] before:bg-[radial-gradient(at_100%_0%,rgb(26,117,103)_10%,rgba(252,252,250,0)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:opacity-100 before:rounded-[20px] tablet:before:rounded-tr-none before:z-1'>
             <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover rounded-[20px]"
-        >
-          <source src="/images/video3.mp4" type="video/mp4" />
-        </video>
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover rounded-[20px]"
+            >
+              <source src="/images/video3.mp4" type="video/mp4" />
+            </video>
             <div className='relative z-99 flex flex-col gap-25 h-full justify-between'>
               <div className='flex gap-7.5 lg:flex-nowrap flex-wrap'>
                 <div className='bg-secondary rounded-[15px] p-5 shadow-[-10px_10px_0px_0px_rgba(250,250,250,0.27)]' >
@@ -82,7 +82,7 @@ export const Testimonials = () => {
                 </div>
               </div>
               <div className='bg-glass w-fit flex xs:flex-nowrap flex-wrap  relative items-center gap-2.5  rounded-[15px] p-5 before:content-[""] before:absolute before:w-full before:h-full before:backdrop-blur-[6px] before:inset-0 z-99 before:z-[-1] before:rounded-[15px] '>
-                 
+
                 <div>
                   <h6 className='text-white xl:text-[55px] sm:text-4xl text-2xl font-semibold leading-none mb-2.5 text-center'>
                     1,200 <span className='text-[32px] text-orange'>+</span>
@@ -101,30 +101,56 @@ export const Testimonials = () => {
 
           </div>
           <div className='tablet:max-w-[58%] w-full tablet:bg-green'>
-            <div className='bg-secondary pt-10 tablet:pl-10 rounded-tl-[50px] h-full '>
-              <div>
-                <div className='flex items-center justify-between gap-5 border-b border-border pb-6.25 xs:flex-nowrap flex-wrap'>
-                  <h5 className='md:text-[32px] sm:text-[26px] xs:text-[24px] text-xl text-primary font-semibold leading-[1.3]'>Most Loved Therapy</h5>
-                  <a className="inline-flex text-nowrap items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-green  transition-all duration-300" href="#booking">Reserve Your Spot</a>
+            <div className='bg-secondary tablet:pt-10 sm:pt-6 pt-3 tablet:pl-10 rounded-tl-[50px] h-full '>
+              <div className='flex items-center justify-between gap-5 sm:border-b border-border sm:pb-6.25 pb-3 xs:flex-nowrap flex-wrap'>
+                <h5 className='md:text-[32px] sm:text-[26px] xs:text-[24px] text-xl text-primary font-semibold leading-[1.3]'>Most Loved Therapy</h5>
+                <a className="xs:inline-flex hidden text-nowrap items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-green  transition-all duration-300 tablet:text-lg md:text-base text-sm" href="#booking">Reserve Your Spot</a>
+              </div>
+              <div className='sm:block hidden'>
+                <div>
+                  <div className='flex overflow-auto items-center md:gap-11.25 gap-5 pt-6.25 mb-5'>
+                    <a href='#0' className='text-primary  md:text-[20px] text-base font-semibold leading-[1.4] flex items-center gap-2.5'>
+                      <svg className='w-5 h-5 fill-orange' aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg>
+                      <p className='text-nowrap sm:text-wrap'>Sound Bath Meditation</p>
+                    </a>
+                    <a href='#0' className='text-primary  md:text-[20px] text-base font-semibold leading-[1.4] flex items-center gap-2.5'>
+                      <svg className='w-5 h-5 fill-orange' aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg>
+                      <p className='text-nowrap sm:text-wrap'>Deep Sleep Massage</p>
+                    </a>
+                    <a href='#0' className='text-primary  md:text-[20px] text-base font-semibold leading-[1.4] flex items-center gap-2.5'>
+                      <svg className='w-5 h-5 fill-orange' aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg>
+                      <p className='text-nowrap sm:text-wrap'>Chakra Balancing</p>
+                    </a>
+                  </div>
+                  <p className='text-text dm-sans md:text-lg text-sm leading-normal mb-10'>
+                    Our clients’ favorite session combining Tibetan bowls and gongs to create deep vibrational healing. Ideal for stress relief, insomnia, and energetic release.
+                  </p>
+                  <Image src={Studio} alt='Tranquil interior of Aeny sound bath studio with mats and healing bowls' className='h-75 object-cover rounded-[20px]' />
                 </div>
-                <div className='flex overflow-auto items-center md:gap-11.25 gap-5 pt-6.25 mb-5'>
-                  <a href='#0' className='text-primary  md:text-[20px] text-base font-semibold leading-[1.4] flex items-center gap-2.5'>
-                    <svg className='w-5 h-5 fill-orange' aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg>
-                    <p className='text-nowrap sm:text-wrap'>Sound Bath Meditation</p>
-                  </a>
-                  <a href='#0' className='text-primary  md:text-[20px] text-base font-semibold leading-[1.4] flex items-center gap-2.5'>
-                    <svg className='w-5 h-5 fill-orange' aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg>
-                    <p className='text-nowrap sm:text-wrap'>Deep Sleep Massage</p>
-                  </a>
-                  <a href='#0' className='text-primary  md:text-[20px] text-base font-semibold leading-[1.4] flex items-center gap-2.5'>
-                    <svg className='w-5 h-5 fill-orange' aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg>
-                    <p className='text-nowrap sm:text-wrap'>Chakra Balancing</p>
-                  </a>
+              </div>
+              <div className='sm:hidden grid  min-[380px]:grid-cols-2 grid-cols-1 gap-2.5'>
+                <div className="bg-[url(/images/bath-therapies-01.jpg)] bg-cover bg-center p-4 rounded-[10px] relative before:content-[&quot;&quot;] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[10px] before:opacity-100 ">
+                  <h5 className='relative sm:text-[24px] text-lg font-semibold leading-[1.3] text-secondary mb-1.5'>Sound Bath Meditation</h5>
+                  <p className='relative text-border sm:text-base text-[12px]  dm-sans max-w-100 w-full'>
+                    Experience healing vibrations from Tibetan bowls and gongs that promote deep relaxation, stress relief, and inner calm.
+                  </p>
                 </div>
-                <p className='text-text dm-sans md:text-lg text-sm leading-normal mb-10'>
-                  Our clients’ favorite session combining Tibetan bowls and gongs to create deep vibrational healing. Ideal for stress relief, insomnia, and energetic release.
-                </p>
-                <Image src={Studio} alt='Tranquil interior of Aeny sound bath studio with mats and healing bowls' className='h-75 object-cover rounded-[20px]' />
+                <div className="bg-[url(/images/studio.jpg)] bg-cover bg-center p-4 rounded-[10px] relative before:content-[&quot;&quot;] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[10px] before:opacity-100">
+                  <h5 className='relative sm:text-[24px] text-lg font-semibold leading-[1.3] text-secondary mb-1.5'>Deep Sleep Massage</h5>
+                  <p className='relative text-border sm:text-base text-[12px]  dm-sans max-w-100 w-full'>
+                    A soothing massage therapy designed to relax the body, reduce tension, and support restful, rejuvenating sleep.
+                  </p>
+                </div>
+                <div className="bg-[url(/images/bath-therapies-02.jpg)] bg-cover bg-center min-[380px]:pt-20 pb-4 pt-4 px-4 rounded-[10px] min-[380px]:col-span-2 relative before:content-[&quot;&quot;] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[10px] before:opacity-100">
+                  <h5 className='relative sm:text-[24px] text-lg font-semibold leading-[1.3] text-secondary mb-1.5'>Chakra Balancing</h5>
+                  <p className='relative text-border sm:text-base text-[12px]  dm-sans max-w-100 w-full'>
+                    Balance your energy centers and restore emotional harmony through guided healing and vibrational wellness techniques.
+                  </p>
+                </div>
+              </div>
+              <div className='xs:hidden block text-end'>
+                <a className="xs:hidden inline-flex mt-2 text-nowrap items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-green  transition-all duration-300 tablet:text-lg md:text-base text-sm" href="#booking">Reserve Your Spot</a>
+
               </div>
             </div>
           </div>

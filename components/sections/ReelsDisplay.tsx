@@ -30,7 +30,7 @@ export default function ReelsDisplay() {
                 // loop
             >
                 <SwiperSlide className="">
-                    <div className="shadow-[0_0_6px_#0000004d] rounded-lg p-2">
+                    <div className="border border-light rounded-lg p-2">
                         <video
                             autoPlay
                             loop
@@ -43,7 +43,7 @@ export default function ReelsDisplay() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide >
-                    <div className="shadow-[0_0_6px_#0000004d] rounded-lg p-2">
+                    <div className="border border-light rounded-lg p-2">
                         <video
                             autoPlay
                             loop
@@ -56,7 +56,7 @@ export default function ReelsDisplay() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide >
-                    <div className="shadow-[0_0_6px_#0000004d] rounded-lg p-2">
+                    <div className="border border-light rounded-lg p-2">
                         <video
                             autoPlay
                             loop
@@ -69,7 +69,7 @@ export default function ReelsDisplay() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide >
-                    <div className="shadow-[0_0_6px_#0000004d] rounded-lg p-2">
+                    <div className="border border-light rounded-lg p-2">
                         <video
                             autoPlay
                             loop
@@ -82,7 +82,7 @@ export default function ReelsDisplay() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide >
-                    <div className="shadow-[0_0_6px_#0000004d] rounded-lg p-2">
+                    <div className="border border-light rounded-lg p-2">
                         <video
                             autoPlay
                             loop

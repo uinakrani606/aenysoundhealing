@@ -28,23 +28,23 @@ export const WeAreHere = () => {
                             <span className="text-[#2e2e2e] font-semibold sm:text-lg text-base">Worldwide Healing</span>
                         </div>
                         <div>
-                            <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-lg font-medium tan-pearl leading-normal mb-5  text-center     '>
+                            <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] mb-5  text-center     '>
                                 Global Sound Healing Sessions
                             </h2>
-                            <p className="dm-sans sm:text-lg text-[12px] text-text leading-[1.6] text-center mb-6">
+                            <p className="dm-sans sm:text-lg text-sm text-text leading-[1.6] text-center mb-6">
                                 Join our online sound healing experiences from anywhere in the world.
                                 Connect, relax, and restore your inner balance through guided healing frequencies.
                             </p>
                         </div>
                     </ScrollAnimate>
                     <div className="w-full">
-                        <div className="rounded-3xl p-6 transition duration-300">
+                        <div className="rounded-3xl transition duration-300">
 
                             <div className="flex flex-wrap gap-2 mb-5">
                                 {countries.map((country) => (
                                     <span
                                         key={country}
-                                        className="px-3 py-1 bg-[#053d351c] text-dark-green rounded-full text-sm font-semibold"
+                                        className="px-3 py-1 bg-[#053d351c] text-dark-green rounded-full sm:text-sm text-[10px] font-semibold"
                                     >
                                         {country}
                                     </span>
@@ -58,13 +58,13 @@ export const WeAreHere = () => {
                                         className="flex items-center gap-3 p-3 rounded-xl bg-white transition border border-[#053d351c]"
                                     >
                                         <span className="text-dark-green w-2.5 h-2.5 bg-dark-green rounded-full"></span>
-                                        <span className="text-text text-base font-semibold">{session}</span>
+                                        <span className="text-text sm:text-base text-xs font-semibold">{session}</span>
                                     </div>
                                 ))}
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center justify-center md:gap-8 sm:gap-6 gap-3 xs:flex-nowrap flex-wrap">
+                    <div className="flex items-center justify-center md:gap-8 sm:gap-6 gap-3 xs:flex-nowrap flex-wrap mt-6">
                         <a href="#0" className="inline-flex items-center gap-2 xl:px-8 px-4 xl:py-3.5 py-2 bg-orange text-white rounded-full font-bold hover:bg-green transition-all duration-300 tablet:text-lg md:text-base text-sm">Join Next Session</a>
                     </div>
                     {/* <div className="py-2 px-5 bg-[#fff] border border-light rounded-[10px] flex flex-col justify-between mt-5 w-fit">
