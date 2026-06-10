@@ -8,7 +8,7 @@ import { ScrollAnimate } from '../ScrollAnimate';
 import "swiper/css";
 export const Pricing = () => {
   return (
-    <section className="lg:py-30 tablet:py-22 md:py-15 py-10 lg:pb-30! pb-5! lg:mt-30 tablet:mt-22 md:mt-15 mt-10 bg-dark-green relative overflow-hidden rounded-[40px] mx-4 sm:mx-8 shadow-card">
+    <section className="lg:py-30 tablet:py-22 md:py-15 py-10 lg:pb-30! pb-5! lg:mt-30 tablet:mt-22 md:mt-15 mt-4 bg-dark-green relative overflow-hidden rounded-[40px] mx-4 sm:mx-8 shadow-card">
       <div className='px-5'>
         <div className="max-w-335 w-full mx-auto">
           <div className="flex flex-col-reverse lg:flex-row xl:gap-16 gap-10 items-start">

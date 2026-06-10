@@ -8,9 +8,9 @@ export const Statistics = () => {
   ];
 
   return (
-    <section className="py-16 bg-white border-t border-[#DADBDB]/30">
+    <section className="py-16 bg-white border-t border-border/30">
       <div className="max-w-container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-[#DADBDB]/30">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-border/30">
           {stats.map((stat) => (
             <div key={stat.id} className="flex flex-col items-center justify-center pt-8 md:pt-0">
               <div className="text-[56px] font-extrabold text-green leading-none mb-4">

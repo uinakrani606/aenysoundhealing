@@ -2,9 +2,7 @@ import React from "react";
 import Services01 from "../../public/images/service-01.png";
 import Services02 from "../../public/images/service-02.png";
 import Services03 from "../../public/images/service-03.png";
-import Services04 from "../../public/images/service-04.png";
 import { ScrollAnimate } from "../ScrollAnimate";
-import Image from "next/image";
 
 const services = [
     {

@@ -80,7 +80,7 @@ export const HealingPrograms = () => {
               {/* <div className='xl:p-7.5 p-5 bg-[#fff] border border-light rounded-[20px] w-full flex flex-col justify-between max-w-155 mb-5'>
                 <p className='text-primary font-semibold'>We recommend healing based on your emotional state, not confusion or guesswork.</p>
               </div> */}
-            <div className='flex gap-5 items-center justify-between xl:flex-nowrap flex-wrap'>
+            <div className='flex gap-5 items-center justify-between xl:flex-nowrap flex-wrap-reverse'>
               <a className="inline-flex text-nowrap items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-green  transition-all duration-300 tablet:text-lg md:text-base text-sm" href="#booking">Start Your Healing</a>
               <div className='flex items-center gap-2.5'>
                <div className="flex -space-x-4">

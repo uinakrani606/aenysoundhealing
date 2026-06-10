@@ -1,9 +1,41 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import star from '../../public/images/star.png';
 import StarYellow from '../../public/images/start.svg';
 import Photographer from '../../public/images/photographer.jpg';
 import Studio from '../../public/images/studio.jpg';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import Photographer01 from '../../public/images/sleepers-01.jpg'
+import Photographer02 from '../../public/images/sleepers-02.jpg'
+import "swiper/css";
+import "swiper/css/pagination";
+
+const testimonials = [
+  {
+    name: "Priya S.",
+    role: "Corporate Professional",
+    image: Photographer,
+    review:
+      "I walked in carrying the weight of the world. After one sound healing session, I felt completely weightless. Profoundly transformative.",
+  },
+  {
+    name: "Rahul M.",
+    role: "Entrepreneur",
+    image: Photographer01,
+    review:
+      "The session helped me reconnect with myself. I felt calmer, lighter, and more focused than I had in months.",
+  },
+  {
+    name: "Anjali P.",
+    role: "Marketing Manager",
+    image: Photographer02,
+    review:
+      "A truly healing experience. The sound bath left me feeling deeply relaxed and refreshed.",
+  },
+];
+
 export const Testimonials = () => {
   return (
     <section id="testimonials" className="px-5 bg-secondary">
@@ -29,7 +61,60 @@ export const Testimonials = () => {
             </div>
           </div>
           <div className='tablet:max-w-[58%] w-full bg-[radial-gradient(at_0%_100%,rgb(26,117,103)_28%,rgb(5,61,53)_100%)] md:p-10 p-6 rounded-[20px] tablet:rounded-bl-none'>
-            <div className='flex  flex-col h-full  justify-between'>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              loop={true}
+              autoplay={{
+                delay: 4000,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay]}
+              className="testimonial-swiper h-full"
+              grabCursor={true}
+            >
+              {testimonials.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <div className="flex flex-col h-full justify-between">
+                    <p className="md:text-[27px] sm:text-2xl xs:text-lg text-base font-normal text-white mb-12.5">
+                      "{item.review}"
+                    </p>
+
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center sm:gap-5 gap-3">
+                        <div className="sm:max-w-17.5 w-full sm:h-17.5 rounded-full overflow-hidden max-w-10">
+                          <Image
+                            src={item.image}
+                            alt={item.name}
+                            className="rounded-full"
+                          />
+                        </div>
+
+                        <div>
+                          <h6 className="sm:text-xl text-base font-semibold leading-[1.4] text-white">
+                            {item.name}
+                          </h6>
+                          <p className="sm:text-sm text-xs font-medium leading-[1.6] text-orange">
+                            {item.role}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="sm:max-w-15 w-full sm:h-17.5 flex items-center justify-center max-w-7.5">
+                        <svg
+                          className="w-full fill-orange"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 32 32"
+                        >
+                          <path d="M27.791 6.459a1 1 0 0 0-.84-.459H20c-1.654 0-3 1.346-3 3v7c0 1.654 1.346 3 3 3h1.985c-.928 2.69-1.721 3.978-4.36 5.077A1 1 0 0 0 18.01 26h.002c5.505-.01 8.667-2.217 10.909-7.611A13.772 13.772 0 0 0 30 13c0-2.893-.875-4.468-2.209-6.541zm-.715 11.157c-1.287 3.097-2.808 4.899-5.067 5.758 1.047-1.306 1.626-2.94 2.312-5.066a1 1 0 0 0-.95-1.308H20a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h6.401C27.486 9.732 28 10.907 28 13c0 1.612-.31 3.163-.924 4.616zM11.95 6H5C3.346 6 2 7.346 2 9v7c0 1.654 1.346 3 3 3h1.985c-.928 2.69-1.721 3.978-4.36 5.077A1 1 0 0 0 3.01 26h.002c5.505-.01 8.667-2.217 10.909-7.611A13.772 13.772 0 0 0 15 13c0-2.893-.875-4.468-2.209-6.541a1 1 0 0 0-.84-.459zm.126 11.616c-1.287 3.097-2.808 4.899-5.067 5.758 1.047-1.306 1.626-2.94 2.312-5.066A1 1 0 0 0 8.371 17H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h6.401C12.486 9.732 13 10.907 13 13c0 1.612-.31 3.163-.924 4.616z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            {/* <div className='flex  flex-col h-full  justify-between'>
               <p className=' md:text-[27px]  sm:text-2xl xs:text-lg text-base font-normal text-white mb-12.5'>“I walked in carrying the weight of the world. After one sound healing session, I felt completely weightless. Profoundly transformative.”</p>
               <div className='flex items-center justify-between'>
                 <div className='flex items-center gap-5'>
@@ -46,7 +131,7 @@ export const Testimonials = () => {
                   <svg className='w-full fill-orange' xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" width="40" height="40" x="0" y="0" viewBox="0 0 32 32" xmlSpace="preserve"><g><path d="M27.791 6.459a1 1 0 0 0-.84-.459H20c-1.654 0-3 1.346-3 3v7c0 1.654 1.346 3 3 3h1.985c-.928 2.69-1.721 3.978-4.36 5.077A1 1 0 0 0 18.01 26h.002c5.505-.01 8.667-2.217 10.909-7.611A13.772 13.772 0 0 0 30 13c0-2.893-.875-4.468-2.209-6.541zm-.715 11.157c-1.287 3.097-2.808 4.899-5.067 5.758 1.047-1.306 1.626-2.94 2.312-5.066a1 1 0 0 0-.95-1.308H20a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h6.401C27.486 9.732 28 10.907 28 13c0 1.612-.31 3.163-.924 4.616zM11.95 6H5C3.346 6 2 7.346 2 9v7c0 1.654 1.346 3 3 3h1.985c-.928 2.69-1.721 3.978-4.36 5.077A1 1 0 0 0 3.01 26h.002c5.505-.01 8.667-2.217 10.909-7.611A13.772 13.772 0 0 0 15 13c0-2.893-.875-4.468-2.209-6.541a1 1 0 0 0-.84-.459zm.126 11.616c-1.287 3.097-2.808 4.899-5.067 5.758 1.047-1.306 1.626-2.94 2.312-5.066A1 1 0 0 0 8.371 17H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h6.401C12.486 9.732 13 10.907 13 13c0 1.612-.31 3.163-.924 4.616z" opacity="1"></path></g></svg>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className='tablet:max-w-[42%] relative bg-[url(/images/journeys.jpg)] w-full bg-center bg-no-repeat bg-cover rounded-[20px] tablet:rounded-tr-none xl:p-10 p-6 before:content-[""] before:bg-[radial-gradient(at_100%_0%,rgb(26,117,103)_10%,rgba(252,252,250,0)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:opacity-100 before:rounded-[20px] tablet:before:rounded-tr-none before:z-1'>
             <video
@@ -129,28 +214,27 @@ export const Testimonials = () => {
                 </div>
               </div>
               <div className='sm:hidden grid  min-[380px]:grid-cols-2 grid-cols-1 gap-2.5'>
-                <div className="bg-[url(/images/bath-therapies-01.jpg)] bg-cover bg-center p-4 rounded-[10px] relative before:content-[&quot;&quot;] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[10px] before:opacity-100 ">
+                <div className="bg-[url(/images/bath-therapies-01.jpg)] bg-cover bg-center flex flex-col justify-end p-4 pt-10 rounded-[10px] relative before:content-[&quot;&quot;] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[10px] before:opacity-100 ">
                   <h5 className='relative sm:text-[24px] text-lg font-semibold leading-[1.3] text-secondary mb-1.5'>Sound Bath Meditation</h5>
                   <p className='relative text-border sm:text-base text-[12px]  dm-sans max-w-100 w-full'>
                     Experience healing vibrations from Tibetan bowls and gongs that promote deep relaxation, stress relief, and inner calm.
                   </p>
                 </div>
-                <div className="bg-[url(/images/studio.jpg)] bg-cover bg-center p-4 rounded-[10px] relative before:content-[&quot;&quot;] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[10px] before:opacity-100">
+                <div className="bg-[url(/images/studio.jpg)] bg-cover bg-center flex flex-col justify-end p-4 pt-10 rounded-[10px] relative before:content-[&quot;&quot;] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[10px] before:opacity-100">
                   <h5 className='relative sm:text-[24px] text-lg font-semibold leading-[1.3] text-secondary mb-1.5'>Deep Sleep Massage</h5>
                   <p className='relative text-border sm:text-base text-[12px]  dm-sans max-w-100 w-full'>
                     A soothing massage therapy designed to relax the body, reduce tension, and support restful, rejuvenating sleep.
                   </p>
                 </div>
-                <div className="bg-[url(/images/bath-therapies-02.jpg)] bg-cover bg-center min-[380px]:pt-20 pb-4 pt-4 px-4 rounded-[10px] min-[380px]:col-span-2 relative before:content-[&quot;&quot;] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[10px] before:opacity-100">
+                <div className="bg-[url(/images/bath-therapies-02.jpg)] bg-cover bg-center flex flex-col justify-end min-[380px]:pt-20 pt-10 pb-4 px-4 rounded-[10px] min-[380px]:col-span-2 relative before:content-[&quot;&quot;] before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:absolute before:w-full before:h-full before:inset-0 before:rounded-[10px] before:opacity-100">
                   <h5 className='relative sm:text-[24px] text-lg font-semibold leading-[1.3] text-secondary mb-1.5'>Chakra Balancing</h5>
                   <p className='relative text-border sm:text-base text-[12px]  dm-sans max-w-100 w-full'>
                     Balance your energy centers and restore emotional harmony through guided healing and vibrational wellness techniques.
                   </p>
                 </div>
               </div>
-              <div className='xs:hidden block text-end'>
+              <div className='xs:hidden block text-start'>
                 <a className="xs:hidden inline-flex mt-2 text-nowrap items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-green  transition-all duration-300 tablet:text-lg md:text-base text-sm" href="#booking">Reserve Your Spot</a>
-
               </div>
             </div>
           </div>
