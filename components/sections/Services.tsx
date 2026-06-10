@@ -61,7 +61,7 @@ export const Services = () => {
   return (
     <section id="therapies" className="relative overflow-hidden sm:px-7.5  px-4">
       <div className="lg:px-5 relative z-1">
-        <div className="max-w-335 mx-auto w-full lg:py-30 tablet:py-22 md:py-15 py-10">
+        <div className="max-w-335 mx-auto w-full 2xl:py-30 tablet:py-20 md:py-15 py-10">
           {/* Header block with ScrollAnimate on Title */}
           <div className="flex flex-col tablet:flex-row justify-between w-full items-center xl:gap-20 lg:gap-12 md:gap-4 gap-2 xl:mb-20 lg:mb-12 md:mb-8 mb-4">
             <ScrollAnimate animation="fade-up" duration={0.8} className="text-left lg:max-w-150 w-full">
@@ -76,7 +76,7 @@ export const Services = () => {
                   <span className="text-[#2e2e2e] font-semibold text-lg">Our Services</span>
                 </div>
               </div>
-              <h2 className="xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] text-primary mt-4">
+              <h2 className="xl:text-[40px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] text-primary mt-4">
                 Healing Therapies for Mind, Body & Soul
               </h2>
             </ScrollAnimate>
@@ -97,7 +97,7 @@ export const Services = () => {
           </div>
 
           {/* Cards Grid with Stagger Animation */}
-          <div className="flex flex-col tablet:gap-20 sm:gap-10 gap-5">
+          <div className="flex flex-col xl:gap-20 sm:gap-10 gap-5">
             <ScrollAnimate
               animation="fade-up"
               duration={0.8}

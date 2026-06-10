@@ -3,10 +3,10 @@ import React from 'react';
 import { useState } from "react";
 import Image from 'next/image';
 import star from '../../public/images/star.png';
-import Icon01 from '../../public/images/Icon-1.png';
-import Icon02 from '../../public/images/Icon-2.png';
-import Icon03 from '../../public/images/Icon-3.png';
-import Icon04 from '../../public/images/Icon-4.png';
+import Icon01 from '../../public/images/svgicon-1.svg';
+import Icon02 from '../../public/images/svgicon-2.svg';
+import Icon03 from '../../public/images/svgicon-3.svg';
+import Icon04 from '../../public/images/svgicon-4.svg';
 import { supabase } from "@/lib/supabase";
 import { ScrollAnimate } from '../ScrollAnimate';
 import Flatpickr from "react-flatpickr";
@@ -39,7 +39,7 @@ export const HealingJourney = () => {
   const [loading, setLoading] = useState(false);
   const recaptchaRef = useRef<ReCAPTCHA | null>(null);
   const [captchaToken, setCaptchaToken] = useState("");
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
 
     setFormData((prev) => ({
@@ -47,7 +47,7 @@ export const HealingJourney = () => {
       [name]: value,
     }));
   };
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     if (!captchaToken) {
       alert("Please verify captcha");
@@ -73,8 +73,8 @@ export const HealingJourney = () => {
     }
 
     alert("Booking submitted!");
-setCaptchaToken("");
-recaptchaRef.current?.reset();
+    setCaptchaToken("");
+    recaptchaRef.current?.reset();
     setFormData({
       name: "",
       email: "",
@@ -87,7 +87,7 @@ recaptchaRef.current?.reset();
   };
   return (
     <section id="booking" className="px-5">
-      <div className='max-w-335 w-full mx-auto lg:pt-30 tablet:pt-22 md:pt-15 pt-10 flex flex-col lg:flex-row xl:gap-16 sm:gap-10 gap-5'>
+      <div className='max-w-335 w-full mx-auto 2xl:pt-30 tablet:pt-20 md:pt-15 pt-10 flex flex-col lg:flex-row xl:gap-16 sm:gap-10 gap-5'>
 
         {/* Left Side Column */}
         <div className='w-full lg:max-w-[54%] flex gap-5 flex-col'>
@@ -101,7 +101,7 @@ recaptchaRef.current?.reset();
               />
               <span className="text-[#2e2e2e] font-semibold text-lg">Plan Your Healing Journey</span>
             </div>
-            <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] tablet:mb-5'>
+            <h2 className='text-primary 2xl:text-[50px] xl:text-[40px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] tablet:mb-5'>
               Book a Personalized Sleep & Sound Session
             </h2>
           </ScrollAnimate>
@@ -117,7 +117,7 @@ recaptchaRef.current?.reset();
 
             {/* Step 1 */}
             <div className='sm:p-7.5 p-3 bg-[radial-gradient(at_0%_0%,rgb(26,117,103)_0%,rgb(5,61,53)_100%)] rounded-[20px] sm:max-w-[calc(50%-10px)] max-w-[calc(50%-6px)] w-full min-h-55 flex flex-col justify-between'>
-              <div className='flex items-start justify-between mb-5 '>
+              <div className='flex items-start justify-between mb-5 '>  
                 <Image src={Icon01} alt='Choose Your Therapy step icon' className='sm:max-w-15 max-w-10 w-full ' />
                 <h6 className='text-orange sm:text-base text-sm font-semibold leading-normal'>01</h6>
               </div>
@@ -246,11 +246,11 @@ recaptchaRef.current?.reset();
               <label htmlFor="booking-notes" className='text-white text-sm font-semibold mb-2 block'>Notes or Intentions</label>
               <textarea name="notes" cols={30} rows={10} value={formData.notes} onChange={handleChange} placeholder='Write your intentions.' id="booking-notes" className='resize-none border border-white w-full px-4 py-3 rounded-[15px] bg-white outline-none focus:border-orange text-sm' />
             </div>
-            <div className="w-full overflow-auto">
+            <div className="w-full overflow-auto flex justify-center">
               <ReCAPTCHA
                 ref={recaptchaRef}
                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
-                onChange={(token:any) => setCaptchaToken(token || "")}
+                onChange={(token: any) => setCaptchaToken(token || "")}
               />
             </div>
             <div className="w-full mt-4">

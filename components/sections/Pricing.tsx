@@ -8,7 +8,7 @@ import { ScrollAnimate } from '../ScrollAnimate';
 import "swiper/css";
 export const Pricing = () => {
   return (
-    <section className="lg:py-30 tablet:py-22 md:py-15 py-10 lg:pb-30! pb-5! lg:mt-30 tablet:mt-22 md:mt-15 mt-4 bg-dark-green relative overflow-hidden rounded-[40px] mx-4 sm:mx-8 shadow-card">
+    <section className="2xl:py-30 tablet:py-20 md:py-15 py-10 lg:pb-30! pb-5! 2xl:mt-30 tablet:mt-20 md:mt-15 mt-4 bg-dark-green relative overflow-hidden rounded-[40px] mx-4 sm:mx-8 shadow-card">
       <div className='px-5'>
         <div className="max-w-335 w-full mx-auto">
           <div className="flex flex-col-reverse lg:flex-row xl:gap-16 gap-10 items-start">
@@ -224,7 +224,7 @@ export const Pricing = () => {
                   />
                   <span className="text-white font-semibold sm:text-lg text-base">Pricing Packages</span>
                 </div>
-                <h2 className='text-white xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] mb-5'>
+                <h2 className='text-white 2xl:text-[50px] xl:text-[40px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] mb-5'>
                   Choose the Right Path for You
                 </h2>
                 <p className='dm-sans sm:text-lg text-sm text-border leading-[1.6] mb-5'>

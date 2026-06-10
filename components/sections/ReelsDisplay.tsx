@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 export default function ReelsDisplay() {
     return (
-        <div className="flex flex-col items-center justify-center gap-4 lg:pt-30 tablet:pt-22 pd:pt-15 pt-6 slider-container">
+        <div className="flex flex-col items-center justify-center gap-4 2xl:pt-30 tablet:pt-16 pd:pt-15 pt-6 slider-container">
             <Swiper
                 className="reels-swiper p-5"
                 slidesPerView={3}

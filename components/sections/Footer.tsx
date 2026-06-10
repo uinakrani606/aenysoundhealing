@@ -6,7 +6,7 @@ import { ScrollAnimate } from '../ScrollAnimate';
 
 export const Footer = () => {
   return (
-    <footer className="bg-dark-green text-white lg:pt-24 tablet:pt-22 md:pt-15 pt-12 lg:pb-12 tablet:pb-10 md:pb-8 pb-6 rounded-t-[40px] relative z-20">
+    <footer className="bg-dark-green text-white 2xl:pt-24 tablet:pt-20 md:pt-15 pt-12 lg:pb-12 tablet:pb-10 md:pb-8 pb-6 rounded-t-[40px] relative z-20">
       <div className="max-w-335 mx-auto px-6">
         <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.12} className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7.5 lg:mb-20 tablet:mb-16 md:mb-12 mb-8">
           {/* Logo & Newsletter */}

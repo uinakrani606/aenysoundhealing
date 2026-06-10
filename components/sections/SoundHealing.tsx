@@ -5,7 +5,7 @@ import Instragram from '../../public/images/instagram.svg';
 import { ScrollAnimate } from "../ScrollAnimate";
 export const SoundHealing = () => {
     return (
-        <section className="lg:py-30 tablet:py-22 md:py-15 md:pb-5 pb-5 py-10  bg-dark-green relative overflow-hidden rounded-[40px] mx-4 sm:mx-8 shadow-card">
+        <section className="2xl:py-30 tablet:py-20 md:py-15 md:pb-5 pb-5 py-10  bg-dark-green relative overflow-hidden rounded-[40px] mx-4 sm:mx-8 shadow-card">
             <div className="px-5">
                 <div className="max-w-335 w-full mx-auto">
                     <ScrollAnimate animation="fade-up" duration={0.8} className="flex items-center justify-center gap-5 mb-5">
@@ -18,7 +18,7 @@ export const SoundHealing = () => {
                         <span className="text-white font-semibold sm:text-lg text-base">Understanding Sound</span>
                     </ScrollAnimate>
                     <ScrollAnimate animation="fade-up" duration={0.8}>
-                        <h2 className='text-white text-center xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] sm:mb-10 mb-5'>
+                        <h2 className='text-white text-center 2xl:text-[50px] xl:text-[40px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] sm:mb-10 mb-5'>
                             Experience the Healing Power of Sound
                         </h2>
                     </ScrollAnimate>

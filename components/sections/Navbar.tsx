@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import WhatsApp from "../../public/images/whatsapp.svg";
 import Logo from '../../public/images/logo.png';
 import { PopupModal } from "react-calendly";
 export const Navbar = () => {
@@ -88,8 +89,8 @@ export const Navbar = () => {
   return (
     <>
       <header className={`fixed top-0 transition-all duration-300 w-full left-0 z-999999 ${isScrolled
-          ? 'p-[15px_0px_15px_0px] md:p-[15px_0px_15px_0px] bg-dark-green/95 backdrop-blur-md shadow-lg border-b border-white/5'
-          : 'p-[50px_24px_0_24px] md:p-[60px_30px_0_30px] bg-transparent'
+        ? 'p-[15px_0px_15px_0px] md:p-[15px_0px_15px_0px] bg-dark-green/95 backdrop-blur-md shadow-lg border-b border-white/5'
+        : 'p-[50px_24px_0_24px] md:p-[60px_30px_0_30px] bg-transparent'
         }`}>
         <div className="mx-auto px-4 xl:px-12 flex items-center justify-between relative z-50 ">
           <div className='flex xl:gap-20 gap-7 items-center'>
@@ -105,8 +106,8 @@ export const Navbar = () => {
                   href={`#${link.id}`}
                   onClick={(e) => handleNavClick(e, link.id)}
                   className={`text-body font-manrope gap-1.5 flex items-center transition-all duration-300 ${activeSection === link.id
-                      ? 'text-orange font-semibold'
-                      : 'text-white/80 hover:text-orange font-semibold'
+                    ? 'text-orange font-semibold'
+                    : 'text-white/80 hover:text-orange font-semibold'
                     }`}
                 >
                   {link.label}
@@ -118,6 +119,15 @@ export const Navbar = () => {
           <div className="hidden lg:flex items-center xl:gap-6 gap-5">
             {/* CTA Button */}
             <a
+              href="https://wa.me/919925788810?text=Hello%20Aeny%20Healing%20Studio,%20I%20would%20like%20to%20book%20a%20session."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-green transition-all duration-300"
+            >
+              <Image src={WhatsApp} alt="WhatsApp" className="w-5 h-5 text-white" />
+              Chat on WhatsApp
+            </a>
+            {/* <a
               href="#booking"
               onClick={(e) => {
                 e.preventDefault();
@@ -127,7 +137,7 @@ export const Navbar = () => {
             >
               Book Session
               <svg aria-hidden="true" className="fill-white w-4" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></svg>
-            </a>
+            </a> */}
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -174,23 +184,22 @@ export const Navbar = () => {
                 setIsMenuOpen(false);
               }}
               className={`text-2xl font-manrope font-semibold transition-all duration-300 ${activeSection === link.id
-                  ? 'text-orange'
-                  : 'text-white/80 hover:text-orange'
+                ? 'text-orange'
+                : 'text-white/80 hover:text-orange'
                 }`}
             >
               {link.label}
             </a>
           ))}
           <a
-            href="#booking"
-            onClick={(e) => {
-              handleNavClick(e, 'booking');
-              setIsMenuOpen(false);
-            }}
-            className="mt-4 inline-flex items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-green transition-all duration-300"
-          >
-            Book Session
-          </a>
+              href="https://wa.me/919925788810?text=Hello%20Aeny%20Healing%20Studio,%20I%20would%20like%20to%20book%20a%20session."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-green transition-all duration-300"
+            >
+              <Image src={WhatsApp} alt="WhatsApp" className="w-5 h-5 text-white" />
+              Chat on WhatsApp
+            </a>
         </nav>
       </div>
     </>
