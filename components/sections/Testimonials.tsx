@@ -39,7 +39,7 @@ const testimonials = [
 export const Testimonials = () => {
   return (
     <section id="testimonials" className="px-5 bg-secondary">
-      <div className='lg:pt-30 tablet:pt-22 md:pt-15 pt-10 max-w-335 mx-auto'>
+      <div className='2xl:pt-30 tablet:pt-20 md:pt-15 pt-10 max-w-335 mx-auto'>
         <div className='flex tablet:gap-0 gap-5 flex-wrap '>
           <div className='tablet:max-w-[42%] w-full tablet:bg-green'>
             <div className='flex flex-col gap-5 justify-between bg-secondary rounded-br-[50px] pr-10 md:pb-10 pb-5 h-full'>
@@ -52,7 +52,7 @@ export const Testimonials = () => {
                 />
                 <span className="text-[#2e2e2e] font-semibold sm:text-lg text-base">Testimonials</span>
               </div>
-              <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8]'>
+              <h2 className='text-primary 2xl:text-[50px] xl:text-[40px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8]'>
                 What Our Clients Are Saying
               </h2>
               <p className='dm-sans sm:text-lg text-sm text-text leading-normal'>

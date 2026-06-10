@@ -15,7 +15,7 @@ export const WeAreHere = () => {
     ];
     return (
         <div>
-            <div className='max-w-335 w-full mx-auto flex flex-col lg:flex-row gap-20 lg:py-30 tablet:py-22 md:py-15 py-12 border-b border-light'>
+            <div className='max-w-335 w-full mx-auto flex flex-col lg:flex-row gap-20 2xl:py-30 tablet:py-20 md:py-15 py-12 border-b border-light'>
                 <div className='w-full flex flex-col items-center sm:px-8 px-4'>
                     <ScrollAnimate animation="fade-up" duration={0.8} className="flex gap-5 flex-col items-center max-w-187.5 mx-auto">
                         <div className="flex items-center gap-5">
@@ -28,7 +28,7 @@ export const WeAreHere = () => {
                             <span className="text-[#2e2e2e] font-semibold sm:text-lg text-base">Worldwide Healing</span>
                         </div>
                         <div>
-                            <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] mb-5 text-center'>
+                            <h2 className='text-primary 2xl:text-[50px] xl:text-[40px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] mb-5 text-center'>
                                 Global Sound Healing Sessions
                             </h2>
                             <p className="dm-sans sm:text-lg text-sm text-text leading-[1.6] text-center mb-6">

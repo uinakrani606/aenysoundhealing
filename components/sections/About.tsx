@@ -7,7 +7,7 @@ import { ScrollAnimate } from '../ScrollAnimate';
 
 export const About = () => {
   return (
-    <section id="about" className="lg:py-30 tablet:py-22 md:py-15 py-10 sm:px-8 px-6 flex justify-center">
+    <section id="about" className="2xl:py-30 tablet:py-20 md:py-15 py-10 sm:px-8 px-6 flex justify-center">
       <div className="max-w-7xl w-full flex tablet:flex-nowrap flex-wrap-reverse md:flex-row items-center tablet:gap-20 sm:gap-10 gap-5">
         {/* Left Content - Image block */}
         {/* <ScrollAnimate animation="scale-in" duration={1.0} className="relative tablet:max-w-134 w-full tablet:flex hidden ">
@@ -32,7 +32,7 @@ export const About = () => {
               />
               <span className="text-[#2e2e2e] font-semibold sm:text-lg text-base">The Heart of Aeny</span>
             </div>
-            <h2 className="text-[#2e2e2e] xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-normal mt-4">
+            <h2 className="text-[#2e2e2e] 2xl:text-[50px] xl:text-[40px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-normal mt-4">
               A Space to Pause, Heal & Reconnect
             </h2>
           </ScrollAnimate>

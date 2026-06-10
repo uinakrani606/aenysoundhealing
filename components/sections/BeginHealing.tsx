@@ -12,15 +12,15 @@ import Star from '../../public/images/star.png';
 
 export const BeginHealing = () => {
   return (
-    <section id="begin-healing" className="border border-[#f0f0f0] bg-white sm:p-2.5 p-2.5 pt-5  rounded-[30px] mx-4 sm:mx-8 flex tablet:flex-nowrap flex-wrap-reverse items-center gap-2.5 overflow-hidden">
+    <section id="begin-healing" className="border border-[#f0f0f0] bg-white sm:p-2.5 p-2.5 pt-5  rounded-[30px] mx-4 sm:mx-8 flex tablet:flex-nowrap flex-wrap-reverse gap-2.5 overflow-hidden">
 
       {/* Left side Image */}
-      <ScrollAnimate animation="fade-up" duration={0.8} className='max-w-full lg:max-w-[37%] w-full relative z-999 before:rounded-[20px] before:content-[""] before:absolute before:inset-0 before:w-full before:h-full before:opacity-100  before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:z-99'>
+      <ScrollAnimate animation="fade-up" duration={0.8} className='max-w-full lg:max-w-[38%] w-full relative z-999 before:rounded-[20px] before:content-[""] before:absolute before:inset-0 before:w-full before:h-full before:opacity-100  before:bg-[linear-gradient(rgba(252,252,250,0)_0%,rgb(5,61,53)_100%)] before:z-99'>
         <Image src={Therapies} alt='Anjali guiding a client during a sound healing session with Tibetan singing bowls' className='rounded-[20px] w-full h-full object-cover' />
       </ScrollAnimate>
 
       {/* Right side Text/CTA Column */}
-      <ScrollAnimate animation="fade-up" duration={0.8} delay={0.15} className='tablet:p-8 md:p-4 p-0 lg:p-10 relative max-w-full lg:max-w-[63%] w-full z-10 flex flex-col h-full justify-between'>
+      <ScrollAnimate animation="fade-up" duration={0.8} delay={0.15} className='tablet:p-8 md:p-4 p-0 lg:p-10 relative max-w-full lg:max-w-[64%] w-full z-10 flex flex-col h-full justify-between'>
         <Image src={Background01} alt="" aria-hidden="true" className='absolute -top-30 -right-20 opacity-50 max-w-75 w-full z-[-1]' />
         <Image src={Background02} alt="" aria-hidden="true" className='absolute -bottom-30 -right-20 opacity-50 max-w-75 w-full z-[-1]' />
 
@@ -35,7 +35,7 @@ export const BeginHealing = () => {
               />
               <span className="text-[#2e2e2e] font-semibold sm:text-lg text-base">The Mind & Heart</span>
             </div>
-            <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] max-w-[730px] w-full'>
+            <h2 className='text-primary 2xl:text-[50px] xl:text-[40px] md:text-[35px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] max-w-182.5 w-full'>
               If your mind feels tired but life keeps going…
             </h2>
           </div>

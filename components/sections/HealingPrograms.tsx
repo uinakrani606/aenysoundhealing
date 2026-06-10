@@ -9,7 +9,7 @@ import Sleepers03 from '../../public/images/sleepers-02.jpg'
 export const HealingPrograms = () => {
   return (
     <section id="programs" className="sm:px-5 px-4 relative overflow-hidden">
-      <div className="max-w-335 w-full mx-auto lg:py-30 tablet:py-22 md:py-15 py-10 flex items-center xl:gap-20 lg:gap-12 md:gap-8 gap-4  tablet:flex-row-reverse flex-col-reverse"> 
+      <div className="max-w-335 w-full mx-auto 2xl:py-30 tablet:py-20 md:py-15 py-10 flex items-center xl:gap-20 lg:gap-12 md:gap-8 gap-4  tablet:flex-row-reverse flex-col-reverse"> 
         <div className='grid grid-cols-2 xs:gap-0 items-center flex-wrap w-full sm:border-0 border border-light sm:p-0 xs:p-5 p-3 rounded-[10px]'>
           <div className='xs:p-5 p-3 h-full w-full bg-[url(/images/journey.jpg)] bg-center bg-no-repeat bg-cover xs:rounded-[20px_20px_0_20px] rounded-[8px_8px_0_8px] relative before:content-[""] before:bg-[radial-gradient(at_100%_100%,rgb(26,117,103)_10%,rgba(252,252,250,0)_100%)] before:absolute before:w-full before:h-full before:inset-0 xs:before:rounded-[20px_20px_0_20px] before:rounded-[8px_8px_0_8px]  before:opacity-100 2xl:p-7.5'>
             <div className='relative z-999 flex  flex-col w-full xs:gap-22.5 gap-12 h-full justify-between'>
@@ -63,7 +63,7 @@ export const HealingPrograms = () => {
               />
               <span className="text-[#2e2e2e] font-semibold sm:text-lg text-base">No confusion, just gentle guidance</span>
             </div>
-            <h2 className='text-primary xl:text-[50px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] mb-5'>
+            <h2 className='text-primary 2xl:text-[50px] xl:text-[40px] md:text-[38px] sm:text-[26px] text-xl font-bold tan-pearl leading-[1.8] mb-5'>
             You Don’t Need to Figure It Out Alone
             </h2>
             <div>
