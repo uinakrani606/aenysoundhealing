@@ -6,7 +6,7 @@ export const TrustedBrands = () => {
       <div className="max-w-container mx-auto px-4 sm:px-8">
         <div className="relative w-full rounded-[30px] overflow-hidden bg-[#775B4A] shadow-soft">
            
-           <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
+           <div className="absolute inset-0 bg-linear-to-r from-black/80 to-transparent"></div>
            <div className="absolute inset-0 flex items-center justify-center text-white/10 text-xl font-bold">[Woman With Headphones Image]</div>
 
            <div className="relative z-10 py-16 px-8 flex flex-col items-center justify-center text-center">

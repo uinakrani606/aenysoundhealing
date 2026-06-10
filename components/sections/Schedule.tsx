@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import star from '../../public/images/star.png';
-import Schedule01 from '../../public/images/schedule-01.jpg';
 import { ScrollAnimate } from '../ScrollAnimate';
 
 export const Schedule = () => {

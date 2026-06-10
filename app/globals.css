@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import "tailwindcss";
+
 @font-face {
   font-family: "Tan Pearl";
   src: url("../public/fonts/tan-Pearl-Regular.woff2") format("woff2");
@@ -7,6 +8,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @theme {
   --breakpoint-xs: 480px;
   --breakpoint-sm: 640px;
@@ -52,26 +54,32 @@
   --radius-md: 24px;
   --radius-sm: 18px;
 
-  --shadow-soft: 0 10px 30px rgba(0,0,0,0.05);
-  --shadow-card: 0 20px 60px rgba(0,0,0,0.08);
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 20px 60px rgba(0, 0, 0, 0.08);
 }
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 body {
   color: var(--color-text);
   background: var(--color-secondary);
 }
+
 .dm-sans {
   font-family: "DM Sans", sans-serif;
 }
+
 .tan-pearl {
   font-family: "Tan Pearl", sans-serif;
 }
+
 a {
   outline: none;
 }
+
 /* Glassmorphism utility */
 .glass {
   background: rgba(255, 255, 255, 0.7);
@@ -86,30 +94,34 @@ a {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .gradient-bg:before {
   background-image: linear-gradient(rgba(252, 252, 250, 0) 0%, rgb(5, 61, 53) 100%);
 }
+
 .marquee-wrapper {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .marquee-track {
-    width: max-content;
-    animation: scroll 25s linear infinite;
+  width: max-content;
+  animation: scroll 25s linear infinite;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-50% - 75px));
-    }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 75px));
+  }
 }
 
 /* Lenis smooth scrolling rules */
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 
@@ -128,10 +140,12 @@ html.lenis, html.lenis body {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
 .flatpickr-day.selected {
   background: #1a7567 !important;
-  border-color: #1a7567 !important; 
+  border-color: #1a7567 !important;
 }
+
 .slider-container {
   width: 100%;
   overflow: hidden;
@@ -140,6 +154,54 @@ html.lenis, html.lenis body {
 .swiper {
   width: 100%;
 }
-.reels-swiper .swiper-wrapper{
+
+.reels-swiper .swiper-wrapper {
   margin: 20px;
+}
+
+@keyframes mapShine {
+  0% {
+    opacity: 1;
+    transform: scale(.1);
+    transform-origin: 50%
+  }
+
+  70% {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(1.2)
+  }
+}
+
+
+.locations__mark.--premium .locations__mark-core {
+  background-color: #053d35;
+}
+
+.locations__mark:before {
+  animation: mapShine 2s linear infinite;
+  animation-delay: -1s;
+  border-radius: 9999px;
+  content: "";
+  height: .875rem;
+  position: absolute;
+  width: .875rem;
+}
+@keyframes markerPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.locations__mark:before {
+  height: 1.875rem;
+  width: 1.875rem;
 }
