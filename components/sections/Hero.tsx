@@ -5,7 +5,7 @@ import Star from '../../public/images/star-orange.png';
 import Sleepers01 from '../../public/images/sleepers-01.jpg'
 import Sleepers02 from '../../public/images/sleepers-02.jpg'
 import Sleepers03 from '../../public/images/sleepers-02.jpg'
-import { ScrollAnimate } from '../ScrollAnimate';
+import {ScrollAnimate} from '../ScrollAnimate';
 
 export const Hero = () => {
   return (
