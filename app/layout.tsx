@@ -83,9 +83,9 @@ export const metadata: Metadata = {
     images: ["/images/hero.jpg"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
     shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
+    apple: "/apple-touch-icon.png", 
   },
 };
 
