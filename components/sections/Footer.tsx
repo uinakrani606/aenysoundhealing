@@ -22,18 +22,18 @@ export const Footer = () => {
             <p className="sm:text-[16px] text-[12px] text-white/70 leading-relaxed">
               Reconnect with Your Inner Calm. Subscribe to our newsletter for wellness tips and updates.
             </p>
-            
+
             {/* Email Input */}
             <form className="relative mt-4" onSubmit={(e) => e.preventDefault()}>
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
+              <input
+                type="email"
+                placeholder="Enter your email"
                 aria-label="Email address for newsletter"
                 id="newsletter-email"
                 className="w-full bg-white/5 border border-white/10 rounded-full py-4 pl-6 pr-14 text-white placeholder-white/50 focus:outline-none focus:border-orange transition-colors"
               />
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 aria-label="Subscribe to newsletter"
                 className="absolute right-2 top-2 cursor-pointer bottom-2 w-10 bg-orange text-white rounded-full flex items-center justify-center hover:bg-white hover:text-orange transition-colors"
               >
@@ -75,22 +75,26 @@ export const Footer = () => {
             <h4 className="text-[20px] font-bold text-white mb-2">Contact & Support</h4>
             <ul className="flex flex-col gap-4">
               <li className="flex items-center gap-3 text-[16px] text-white/70">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                <span>+91 99257 88810</span>
+                <a href="tel:+919925788810" target='_blank' className='flex items-start gap-3 text-[16px] text-white/70'>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  <span>+91 99257 88810</span>
+                </a>
               </li>
               <li className="flex items-center gap-3 text-[16px] text-white/70">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                <span>hello@aenywellness.com</span>
+                <a href="mailto:hello@aenywellness.com" target='_blank' className='flex items-start gap-3 text-[16px] text-white/70'>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <span>hello@aenywellness.com</span>
+                </a>
               </li>
-              <li className="flex items-start gap-3 text-[16px] text-white/70">
-              <a href='https://maps.app.goo.gl/iv6VfXMbRc35H5uj8' target='_blank'>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              </a>
-                <span>
-                  Zadafiya Farm, Abrama Rd,
-                  <br/>near P P Savani School,
-                  <br/> Mota Varachha, Surat, Gujarat
-                </span>
+              <li>
+                <a href='https://maps.app.goo.gl/iv6VfXMbRc35H5uj8' target='_blank' className='flex items-start gap-3 text-[16px] text-white/70'>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <span>
+                    Zadafiya Farm, Abrama Rd,
+                    <br />near P P Savani School,
+                    <br /> Mota Varachha, Surat, Gujarat
+                  </span>
+                </a>
               </li>
             </ul>
           </div>
@@ -103,7 +107,7 @@ export const Footer = () => {
           {/* Social Icons */}
           <div className="flex items-center gap-3">
             {['instagram', 'facebook', 'twitter'].map((social) => (
-              <a key={social} href={`https://www.${social}.com/soulhealing_by_aeny/?hl=en`} target="_blank"  aria-label={`Follow Aeny Wellness on ${social}`} className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-orange hover:border-orange transition-colors duration-300">
+              <a key={social} href={`https://www.${social}.com/soulhealing_by_aeny/?hl=en`} target="_blank" aria-label={`Follow Aeny Wellness on ${social}`} className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-orange hover:border-orange transition-colors duration-300">
                 {social === 'instagram' && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>}
                 {social === 'facebook' && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>}
                 {social === 'twitter' && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>}
