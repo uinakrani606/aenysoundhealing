@@ -20,7 +20,7 @@ export const BeginHealing = () => {
       </ScrollAnimate>
 
       {/* Right side Text/CTA Column */}
-      <ScrollAnimate animation="fade-up" duration={0.8} delay={0.15} className='tablet:p-8 md:p-4 p-0 lg:p-10 relative max-w-full lg:max-w-[64%] w-full z-10 flex flex-col h-full justify-between'>
+      <ScrollAnimate animation="fade-up" duration={0.8} delay={0.15} className='tablet:p-8 md:p-4 p-0 xl:p-10 relative max-w-full lg:max-w-[64%] w-full z-10 flex flex-col h-full justify-between'>
         <Image src={Background01} alt="" aria-hidden="true" className='absolute -top-30 -right-20 opacity-50 max-w-75 w-full z-[-1]' />
         <Image src={Background02} alt="" aria-hidden="true" className='absolute -bottom-30 -right-20 opacity-50 max-w-75 w-full z-[-1]' />
 
