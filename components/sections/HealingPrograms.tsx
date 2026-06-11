@@ -88,7 +88,7 @@ export const HealingPrograms = () => {
                 <Image className="w-12 h-12 rounded-full border-2 border-white object-cover" src={Sleepers02} alt="Aeny Wellness client - Dev"/>
                 <Image className="w-12 h-12 rounded-full border-2 border-white object-cover" src={Sleepers03} alt="Aeny Wellness client - Sarah"/>
               </div>
-              <span className='text-primary text-base block  font-semibold  leading-normal pl-2.5'>
+              <span className='text-primary text-base block  font-semibold  leading-normal pl-2.5 ml-3'>
                 27k+ Happy Sleepers
               </span>
 
