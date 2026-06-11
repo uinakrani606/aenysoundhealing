@@ -17,7 +17,7 @@ export const WeAreHere = () => {
         <div>
             <div className='max-w-335 w-full mx-auto flex flex-col lg:flex-row gap-20 2xl:py-30 tablet:py-20 md:py-15 py-12 border-b border-light'>
                 <div className='w-full flex flex-col items-center sm:px-8 px-4'>
-                    <ScrollAnimate animation="fade-up" duration={0.8} className="flex gap-5 flex-col items-center max-w-187.5 mx-auto">
+                    <ScrollAnimate animation="fade-up" duration={0.8} className="flex gap-5 flex-col items-center max-w-250 mx-auto">
                         <div className="flex items-center gap-5">
                             <Image
                                 src={star}
@@ -38,23 +38,23 @@ export const WeAreHere = () => {
                         </div>
                     </ScrollAnimate>
                     <div className="flex gap-10 items-center tablet:flex-nowrap flex-wrap-reverse ">
-                        <div className="grid tablet:grid-cols-2 xs:grid-cols-2 grid-cols-1 gap-5  tablet:gap-y-10 tablet:max-w-[40%] w-full">
-                            <div className="tablet:my-0 sm:my-5 xs:my-4 my-3">
+                        <div className="grid tablet:grid-cols-2 xs:grid-cols-2 grid-cols-1 gap-5  tablet:max-w-[40%] w-full">
+                            <div className="border border-light p-5 rounded-[20px]">
                                 <h6 className="text-black mb-1 sm:text-2xl text-xl leading-none font-semibold">+10</h6>
                                 <p className="sm:text-lg text-base text-primary font-bold xs:mb-2.5 mb-1">Years of Practice</p>
                                 <span className="text-sm">Protecting businesses and Individuals with precision and integrity.</span>
                             </div>
-                            <div className="tablet:my-0 sm:my-5 xs:my-4 my-3">
-                                <h6 className="text-black mb-1 sm:text-2xl text-xl leading-none font-semibold">+190</h6>
-                                <p className="sm:text-lg text-base text-primary font-bold xs:mb-2.5 mb-1">Lives Impacted</p>
-                                <span className="text-sm">Supporting personal well-being through the transformative power of sound.</span>
-                            </div>
-                            <div className="tablet:my-0 sm:my-5 xs:my-4 my-3">
+                            <div className="border border-light p-5 rounded-[20px]">
                                 <h6 className="text-black mb-1 sm:text-2xl text-xl leading-none font-semibold">+2,781</h6>
                                 <p className="sm:text-lg text-base text-primary font-bold xs:mb-2.5 mb-1">Trusted Clients</p>
                                 <span className="text-sm">Startups, enterprises, and individuals worldwide.</span>
                             </div>
-                            <div className="tablet:my-0 sm:my-5 xs:my-4 my-3">
+                            <div className="border border-light p-5 rounded-[20px]">
+                                <h6 className="text-black mb-1 sm:text-2xl text-xl leading-none font-semibold">+190</h6>
+                                <p className="sm:text-lg text-base text-primary font-bold xs:mb-2.5 mb-1">Lives Impacted</p>
+                                <span className="text-sm">Supporting personal well-being through the transformative power of sound.</span>
+                            </div>
+                            <div className="border border-light p-5 rounded-[20px]">
                                 <h6 className="text-black mb-1 sm:text-2xl text-xl leading-none font-semibold">+300</h6>
                                 <p className="sm:text-lg text-base text-primary font-bold xs:mb-2.5 mb-1">Healing Sessions</p>
                                 <span className="text-sm">Guided sound healing experiences for balance, relaxation, and inner well-being.</span>
@@ -93,7 +93,7 @@ export const WeAreHere = () => {
                         </div>
                     </div>
                     <div className="flex items-center justify-center md:gap-8 sm:gap-6 gap-3 xs:flex-nowrap flex-wrap mt-6">
-                        <a href="#0" className="inline-flex items-center gap-2 xl:px-8 px-4 xl:py-3.5 py-2 bg-orange text-white rounded-full font-bold hover:bg-green transition-all duration-300 tablet:text-lg md:text-base text-sm">Join Next Session</a>
+                        <a href="#0" className="flex text-nowrap justify-center items-center gap-2 px-8 py-3.5 bg-orange text-white rounded-full font-bold hover:bg-dark-green hover:text-white transition-all duration-300 tablet:text-lg md:text-base text-sm">Join Next Session</a>
                     </div>
                 </div>
             </div>
