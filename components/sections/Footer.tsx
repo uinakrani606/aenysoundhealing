@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import Logo from '../../public/images/logo.png';
 import { ScrollAnimate } from '../ScrollAnimate';
 
 export const Footer = () => {
@@ -11,13 +13,8 @@ export const Footer = () => {
         <ScrollAnimate animation="stagger-fade" duration={0.8} stagger={0.12} className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7.5 lg:mb-20 tablet:mb-16 md:mb-12 mb-8">
           {/* Logo & Newsletter */}
           <div className="flex flex-col gap-6 lg:pr-8 border-r-0 lg:border-r border-white/10 sm:col-span-1 xs:col-span-2 col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-2">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" fill="var(--color-green)" />
-                <path d="M20 10C14.4772 10 10 14.4772 10 20C10 25.5228 14.4772 30 20 30C25.5228 30 30 25.5228 30 20" stroke="white" strokeWidth="2" strokeLinecap="round" />
-                <circle cx="20" cy="15" r="2" fill="var(--color-orange)" />
-              </svg>
-              <span className="text-[28px] font-extrabold text-white tracking-tight">aeny</span>
+            <Link href="/" className="flex items-center gap-2 max-w-37.5 md:max-w-50.5 w-full">
+              <Image src={Logo} alt="Aeny Wellness Logo" priority width={150} />
             </Link>
             <p className="sm:text-[16px] text-[12px] text-white/70 leading-relaxed">
               Reconnect with Your Inner Calm. Subscribe to our newsletter for wellness tips and updates.
@@ -77,19 +74,19 @@ export const Footer = () => {
               <li className="flex items-center gap-3 text-[16px] text-white/70">
                 <a href="tel:+919925788810" target='_blank' className='flex items-start gap-3 text-[16px] text-white/70'>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                  <span>+91 99257 88810</span>
+                  <span className='underline'>+91 99257 88810</span>
                 </a>
               </li>
               <li className="flex items-center gap-3 text-[16px] text-white/70">
                 <a href="mailto:hello@aenywellness.com" target='_blank' className='flex items-start gap-3 text-[16px] text-white/70'>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                  <span>hello@aenywellness.com</span>
+                  <span className='underline'>hello@aenywellness.com</span>
                 </a>
               </li>
               <li>
                 <a href='https://maps.app.goo.gl/iv6VfXMbRc35H5uj8' target='_blank' className='flex items-start gap-3 text-[16px] text-white/70'>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-orange)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                  <span>
+                  <span className='underline'>
                     Zadafiya Farm, Abrama Rd,
                     <br />near P P Savani School,
                     <br /> Mota Varachha, Surat, Gujarat
@@ -113,10 +110,6 @@ export const Footer = () => {
                 {social === 'twitter' && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>}
               </a>
             ))}
-          </div>
-          <div className="flex items-center gap-6 text-[14px] text-white/50">
-            <Link href="#privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="#terms" className="hover:text-white transition-colors">Terms & Conditions</Link>
           </div>
         </div>
       </div>
